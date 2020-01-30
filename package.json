@@ -1,0 +1,26 @@
+{
+  "name": "gulp-markup-students",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahornyiv/gulp-markup-students.git"
+  },
+  "author": "Nahornyi Vadim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahornyiv/gulp-markup-students/issues"
+  },
+  "homepage": "https://github.com/nahornyiv/gulp-markup-students#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "gulp": "github:gulpjs/gulp#v4.0.0-alpha.3"
+  }
+}

@@ -1,0 +1,177 @@
+//////////////////////////CERTIFICATES BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+
+.certificates {
+  padding: 80px 0;
+  position: relative;
+  background-color: #fff;
+
+  .caption {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: $font_text;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: -.02em;
+    color: #000;
+    text-align: center;
+  }
+
+  .gallery-image {
+    position: relative;
+    outline: none;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    z-index: -1;
+    filter: opacity(50%);
+
+    .btn {
+      position: absolute;
+      padding: 12px 72px;
+      bottom: -4px;
+      left: -4px;
+      background-color: #FEC940;
+      border-radius: 0;
+      display: none;
+
+      span {
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 33px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+
+    img {
+      z-index: 1;
+      margin-left: auto;
+      border-style: none;
+      margin-right: auto;
+      width: 80%;
+    }
+  }
+
+  .slick-center {
+    transition: .3s;
+    transform: scale(1.3);
+    z-index: 9;
+    position: relative;
+    filter: opacity(100%);
+    padding: 25px 0;
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 0;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #c4956a;
+    border: 1px solid #c4956a;
+    outline: none;
+    background: #fff;
+    z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #fff;
+    border: 1px solid #c4956a;
+    background: #c4956a;
+  }
+
+  ///slick-prev slick-next end
+
+  //slider dots begin
+
+  .slick-dots {
+    position: absolute;
+    bottom: -35px;
+    display: block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    right: 0;
+  }
+
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 23px 0 5px;
+    border: 1px #c4956a solid;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    border: 1px #c4956a solid;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #c4956a;
+    border-radius: 50%;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+
+  //slider dots end
+
+  ////media
+
+  @media (max-width: 991px) {
+    .gallery-image {
+      filter: opacity(100%);
+    }
+    .gallery-image {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 40px 0;
+
+    .caption {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .caption {
+      font-size: 18px;
+    }
+  }
+}
+
+//////////////////////////CERTIFICATES END////////////////////////

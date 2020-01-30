@@ -1,0 +1,281 @@
+
+.header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 26px;
+  z-index: 5;
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #7E5895 0%, #FFFFFF 54.17%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 10px 16px 10px 28px;
+  }
+
+  .logo {
+    max-width: 144px;
+    max-height: 36px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-left: 69px;
+  }
+
+  .menu a {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #6B4184;
+  }
+
+  .menu a:hover {
+    text-decoration: none;
+  }
+
+  .button {
+    background: #6B4184;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    outline: none !important;
+
+    .btn {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 10px 30px;
+      text-align: center;
+      color: #FFFFFF;
+      outline: none !important;
+    }
+
+    .btn:visited, .btn:focus, .btn:active, .btn:hover, .btn:focus-within {
+      outline: none !important;
+    }
+
+  }
+
+  ////////select
+
+  .custom-select {
+    position: relative;
+    width: 128px;
+    padding: 0;
+    height: auto;
+    background: transparent;
+    border: none;
+    outline: none !important;
+  }
+
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+
+  .select-selected {
+    background-color: transparent;
+  }
+
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 5.5px 0 5.5px;
+    border-color: #6B4184 transparent transparent transparent;
+  }
+
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-style: solid;
+    border-width: 0 6px 8px 6px;
+    border-color: transparent transparent #6B4184 transparent;
+    top: 17px;
+  }
+
+  /* style the items (options), including the selected item: */
+  .select-items div, .select-selected {
+    outline: none !important;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #6B4184;
+    width: 100%;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align: left;
+  }
+
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 125%;
+    left: 0;
+    right: -44px;
+    z-index: 99;
+  }
+
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  //////////
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // c крестиком
+
+  .toggle-menu {
+    position: relative;
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+    display: none;
+
+    span {
+      position: absolute;
+      background-color: #1D1D1D;
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      right: 0;
+      margin-top: 0;
+      opacity: 1;
+      &:before {
+        position: absolute;
+        background: #1D1D1D;
+        width: 18px;
+        height: 2px;
+        bottom: 5px;
+        content: "";
+        display: block;
+      }
+      &:after{
+        position: absolute;
+        background: #1D1D1D;
+        width: 18px;
+        height: 2px;
+        top: 5px;
+        content: "";
+        display: block;
+      }
+    }
+  }
+
+  .toggle-menu.menu-on {
+    span {
+      background-color: transparent;
+      transition: all .3s ease-in-out;
+      &:before {
+        background-color: #1D1D1D;
+        transform: rotate(-45deg);
+        top: 0;
+        position: absolute;
+        transition: all .3s ease-in-out;
+      }
+      &:after {
+        background-color: #1D1D1D;
+        transform: rotate(45deg);
+        top: 0;
+        position: absolute;
+        transition: all .3s ease-in-out;
+      }
+    }
+
+  }
+
+  ///media
+
+  @media (max-width: 1146px) {
+
+    .header__inner {
+      display: flex;
+
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: inherit;
+    }
+
+    .main-nav {
+      display: none;
+      padding-top: 14px;
+    }
+
+    .menu li {
+      margin-left: 0;
+    }
+
+    .main-nav.open {
+      display: block;
+    }
+
+    .menu {
+      display: block;
+      text-align: center;
+    }
+
+    .menu a {
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -.02em;
+      font-style: normal;
+      font-size: 15px;
+      color: #000000;
+      font-family: $font_text;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .toggle-menu {
+      display: block;
+    }
+  }
+
+  @media (max-width: 625px) {
+    .address p {
+      display: flex;
+    }
+
+  }
+
+  @media (max-width: 460px) {
+    .logo {
+      max-width: 80px;
+      max-height: 30px;
+    }
+    .address p {
+      font-size: 12px;
+      margin: 0 0 0 10px;
+    }
+
+    .phone {
+      margin-left: 10px;
+      font-size: 13px;
+    }
+  }
+
+}

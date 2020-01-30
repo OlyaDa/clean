@@ -1,0 +1,231 @@
+
+.banner {
+  position: relative;
+  min-height: calc(100vh - 87px);
+  background: url("../../public/images/banner.png") top left no-repeat;
+  background-size: 100% 100%;
+  padding-top: 87px;
+  z-index: 2;
+
+  .banner-inner {
+    min-height: calc(100vh - 87px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .caption {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    color: #5C3971;
+    margin-bottom: 38px;
+  }
+
+  .sub-caption {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 186.68%;
+    color: rgba(17, 5, 52, 0.8);
+    margin: 0;
+    max-width: 790px;
+  }
+
+  .social-icons {
+    height: 260px;
+    position: absolute;
+    right: 0;
+    top: 12%;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .circle-big {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 69px;
+      height: 69px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, rgba(156, 132, 192, 0.2) 1.35%, rgba(102, 246, 255, 0.2) 100%);
+      margin: 25px 0;
+    }
+
+    .circle-small {
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #7E5895 0%, #6B4184 100%);
+      border: 1px solid #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon-facebook {
+        font-size: 22px;
+      }
+
+      .icon-jam-instagram {
+        font-size: 30px;
+      }
+
+      .icon-youtube {
+        font-size: 24px;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .inputs {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.35);
+      border-radius: 50px;
+      padding: 11px 16px 11px 49px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    p {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 32px;
+      color: #5C3971;
+      max-width: 430px;
+      margin: 0 46px 0 0;
+      position: relative;
+
+      .icon-arrow-long {
+        position: absolute;
+        width: 78px;
+        top: 20px;
+        left: -100px;
+      }
+    }
+
+    input::-webkit-input-placeholder {
+      color: #6B4184;
+    }
+    input::-ms-input-placeholder {
+      color: #6B4184;
+    }
+    input::-ms-input-placeholder {
+      color: #6B4184;
+    }
+    input::placeholder {
+      color: #6B4184;
+    }
+
+    input {
+      padding: 10px 15px 12px 15px;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #6B4184;
+      background: transparent;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid #44668b;
+      max-width: 306px;
+      width: 100%;
+      outline:  none!important;
+    }
+
+    button {
+      background: #6B4184;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      border-radius: 30px;
+      border: 0;
+      margin-left: 101px;
+      width: 372px;
+
+      .btn {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        padding: 14px 45px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  ////media
+
+  @media (max-width: 991px) {
+    .caption {
+      font-size: 40px;
+    }
+
+    .sub-caption {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .item .circle {
+      height: 75px;
+      width: 75px;
+    }
+
+    .item .circle .icon-door, .item .circle .icon-truck, .item .circle .icon-contract {
+      font-size: 40px;
+    }
+
+    .item .text {
+      max-width: 160px;
+      line-height: 140.5%;
+    }
+  }
+
+  @media (max-width: 575px) {
+
+    .captions {
+      margin-top: 20px;
+    }
+
+    .caption {
+      font-size: 25px;
+    }
+
+    .order {
+      margin-bottom: 5px;
+    }
+
+    .circles-holder {
+      margin-bottom: 10px;
+    }
+
+    .banner-inner {
+      justify-content: space-between;
+    }
+
+    .sub-caption {
+      font-size: 18px;
+    }
+
+    .item .circle {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .item .text {
+      margin-top: 8px;
+    }
+
+    .order p {
+      font-size: 15px;
+    }
+
+    .order .btn {
+      font-size: 12px;
+    }
+  }
+
+}

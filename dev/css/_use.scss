@@ -1,0 +1,165 @@
+//////////////////////////USE OF OUR PRODUCTS BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+
+.use {
+  padding: 80px 0;
+  position: relative;
+  background-color: #f5f5f5;
+
+  .caption {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: $font_text;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: -.02em;
+    color: #000;
+    text-align: center;
+  }
+
+  .item {
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    &:hover {
+      p {
+        color: #c4956a;
+      }
+    }
+
+    span {
+      font-size: 45px;
+      position: absolute;
+      left: 40px;
+    }
+
+    p {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 0;
+    }
+  }
+
+  .image-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-big {
+    max-width: 460px;
+    max-height: 377px;
+    margin-right: 5px;
+  }
+
+  .image-small {
+    max-width: 149px;
+  }
+
+  .middle {
+    margin: 5px 0;
+  }
+
+  .image-for {
+    max-width: 663px;
+    height: 320px;
+  }
+
+  .image-nav {
+    max-width: 300px;
+    height: 155px;
+  }
+
+  .nav-tabs .nav-link {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    display: contents;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  ////media
+
+  @media (max-width: 1200px) {
+    .item {
+      justify-content: start;
+      span {
+        font-size: 45px;
+        position: relative;
+        margin-right: 20px;
+        left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .item {
+      justify-content: center;
+      span {
+        font-size: 40px;
+        position: absolute;
+        left: 17%;
+      }
+    }
+
+    .image-holder {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 40px 0;
+
+    .caption {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .item {
+      padding: 20px;
+      span {
+        left: 4%;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .caption {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .item {
+      flex-direction: column;
+      span {
+        position: relative;
+        margin-right: 0;
+        left: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+//////////////////////////USE OF OUR PRODUCTS END////////////////////////

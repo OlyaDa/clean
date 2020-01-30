@@ -1,0 +1,161 @@
+//////////////////////////COOPERATION BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+
+.cooperation {
+  padding: 80px 0;
+  position: relative;
+  background: #282828;
+
+  .title {
+    font-weight: 700;
+    font-family: $font_text;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-title {
+    font-weight: 700;
+    font-family: $font_text;
+    letter-spacing: -.02em;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    .block {
+      display: block;
+    }
+  }
+
+  .text {
+    font-family: $font_text;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    color: #fff;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    display: inline-block;
+    max-width: 200px;
+    min-height: 42px;
+    padding: 9px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -.02em;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-family: $font_text;
+    font-style: normal;
+    background: transparent;
+    outline: none;
+    color: #FFFFFF;
+    margin-right: 25px;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input::-webkit-input-placeholder { color: #FFFFFF; }
+  input::-ms-input-placeholder { color: #FFFFFF; }
+  input::-ms-input-placeholder { color: #FFFFFF; }
+  input::placeholder { color: #FFFFFF; }
+
+button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 1px solid #c4956a;
+  font-family: $font_text;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #c4956a;
+  color: #FFFFFF;
+  border-radius: 0;
+  &:hover {
+    background-color: transparent;
+    color: #c4956a;
+  }
+}
+
+////media
+
+@media (max-width: 1208px) {
+  input {
+    min-width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .title {
+    text-align: center;
+  }
+
+  .text {
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .form-title {
+    text-align: center;
+  }
+
+  input {
+    max-width: 100%;
+    min-width: 65%;
+    margin-right: 0;
+  }
+
+  form {
+    text-align: center;
+
+    button {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .title, .form-title {
+      font-size: 18px;
+    }
+
+    input {
+      min-width: 95%;
+    }
+  }
+
+}
+
+
+//////////////////////////COOPERATION END////////////////////////

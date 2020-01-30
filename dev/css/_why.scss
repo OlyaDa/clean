@@ -1,0 +1,158 @@
+
+.why {
+  background: #ffffff;
+  background: url("../../public/images/bg-why.png") top left no-repeat;
+  background-size: auto;
+  position: relative;
+  margin-top: -70px;
+  z-index: 1;
+  padding: 126px 0 60px 0;
+
+  .caption {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    color: #5C3971;
+    margin-bottom: 37px;
+    margin-top: 47px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 187.18%;
+    color: #000000;
+    margin: 0;
+    max-width: 576px;
+    width: 100%;
+  }
+
+  .slider {
+    max-width: 486px;
+    max-height: 320px;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .why-slider {
+    outline: none!important;
+  }
+
+  .image {
+    max-width: 304px;
+    max-height: 370px;
+    position: absolute;
+    top: 88px;
+    left: -140px;
+    z-index: 1;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev.slick-arrow {
+    right: 162px;
+  }
+
+  .slick-next {
+    right: 100px;
+  }
+
+  .slick-prev, .slick-next {
+    bottom: -124px;
+    //font-size: 16px;
+    //line-height: 0;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #fff;
+    //border: 1px solid #0194FE;
+    outline: none !important;
+    background: #6B4184;
+    z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #fff;
+    //border: 1px solid #0194FE;
+    //background: #0194FE;
+  }
+  ///slick-prev slick-next end
+
+
+  ////media
+
+  @media (max-width: 991px) {
+    .text {
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+
+    .catalog-card {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 20px 0;
+
+    .caption {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .image-video {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .catalog-card span {
+      font-size: 40px;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    .catalog-card {
+      min-height: 130px;
+    }
+
+    .catalog-card p {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .caption {
+      font-size: 18px;
+    }
+  }
+
+}

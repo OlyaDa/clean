@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Clean"/>
+    <meta property="og:description"
+          content=""/>
+    <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.img">
+    <meta property="og:url" content="https://teleport-plus.com/"/>
+    <meta property="og:site_name" content="teleport-plus"/>
+    <title>Clean</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic"-->
+    <!--rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"-->
+    <!--rel="stylesheet">-->
+
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!--.......................HEADER.......................-->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="top">
+                    <div class="logo">
+                        <a href="#">
+                            <img class="logo" src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <span class="toggle-menu">
+                        <span></span>
+                    </span>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class=" menu list-reset">
+                        <li><a href="#" class="nav-link-new">О нас</a></li>
+                        <li>
+                            <div class="custom-select">
+                                <select>
+                                    <option>Виды уборки</option>
+                                    <option><a href="#" class="nav-link-new">Генеральная</a></option>
+                                    <option><a href="#" class="nav-link-new">Поддерживающая</a></option>
+                                    <option><a href="#" class="nav-link-new">После стройки</a></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-link-new">Отзывы</a></li>
+                        <li>
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Заказать звонок
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--.......................BANNER.......................-->
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner-inner">
+
+                <div class="captions">
+                    <h2 class="caption">
+                        Профессиональный клининг в Киеве
+                    </h2>
+                    <h3 class="sub-caption">
+                        Выполняем все виды профессиональной уборки жилых и коммерческих помещений, быстро и качественно!
+                    </h3>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#">
+                        <div class="circle-big">
+                            <div class="circle-small">
+                                <span class="icon-facebook"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="circle-big">
+                            <div class="circle-small">
+                                <span class="icon-jam-instagram"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="circle-big">
+                            <div class="circle-small">
+                                <span class="icon-youtube"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!--order-main-->
+                <form class="order-main">
+                    <p>
+                        <span class="icon-arrow-long"></span>
+                        Оставьте свой номер телефона и получите
+                        убранную квартиру в течении 1 дня
+                    </p>
+
+                    <div class="inputs">
+                        <input placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>
+                        <input name="order" type="hidden" value="Оставьте свой номер и получите убранную квартиру">
+                        <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+                        <button class="disbutt" disabled>
+                            <span class="btn">Получить просчет</span>
+                        </button>
+                    </div>
+                </form>
+                <!--order-main-->
+
+            </div>
+        </div>
+    </div>
+
+    <!--.......................MAIN.......................-->
+
+    <main class="content">
+
+        <!--.......................WHY.......................-->
+
+        <section class="why">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="caption">
+                            ПОЧЕМУ SOLIDCARE CLEANING
+                        </h2>
+                        <p style="margin-bottom: 35px;">
+                            В SOLIDCARE работают опытные профессионалы, которые, предоставляя максимально качественный
+                            сервис, затрагивающий каждый сантиметр помещения, умело применяют лучшие технологии по
+                            очистке и уходу за поверхностями, материалы , инструменты и оборудование ведущих мировых
+                            марок. Все то, чем можно порадовать Ваш дом и привести его в состояние «выставочного»
+                            образца.
+                        </p>
+                        <p>
+                            Но главный наш сюрприз – это доступность! Мы стараемся, чтобы каждый занятый, развивающийся
+                            житель нашего города, который разделяет наши ценности- мог позволить себе настоящее высшее
+                            качество услуг клининга SOLIDCARE.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 text-right">
+                        <div class="slider">
+                            <div class="image">
+                                <img src="images/video1.png" alt="клининговая комманда">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                <span class="circle">
+                                    <span class="icon-play"></span>
+                                </span>
+                                </a>
+                            </div>
+
+                            <div class="why-slider">
+                                <div class="image-slider">
+                                    <img src="images/command.png" alt="клининговая комманда">
+                                </div>
+
+                                <div class="image-slider">
+                                    <img src="images/command.png" alt="клининговая комманда">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--.......................SERVICES.......................-->
+
+        <section class="services">
+            <div class="container">
+                <h2 class="caption">
+                    Оказываем услуги по клиннигу и химчистке
+                    Для квартир, коттеджей и офисов
+                </h2>
+
+                <div class="slider">
+                    <div class="items" id="items">
+                        <div class="item left" id="left" onclick="swap(0)">
+                            <div class="name">
+                                <p>ГЕНЕРАЛЬНАЯ УБОРКА</p>
+                            </div>
+
+                            <div class="info">
+                                <p class="title">ГЕНЕРАЛЬНАЯ УБОРКА</p>
+
+                                <p class="text">
+                                    Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                    включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                    от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                    пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                    работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                                </p>
+
+                                <div class="button">
+                                    <a href="#popup" class="btn popup-link">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item center" id="center" onclick="swap(1)" style="">
+                            <div class="name">
+                                <p>ПОДДЕРЖИВАЮЩАЯ УБОРКА</p>
+                            </div>
+
+                            <div class="info">
+                                <p class="title">ПОДДЕРЖИВАЮЩАЯ УБОРКА</p>
+
+                                <p class="text">
+                                    Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                    включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                    от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                    пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                    работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                                </p>
+
+                                <div class="button">
+                                    <a href="#popup" class="btn popup-link">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item right" id="right" onclick="swap(2)">
+                            <div class="name">
+                                <p>УБОРКА ПОСЛЕ СТРОЙКИ</p>
+                            </div>
+
+                            <div class="info">
+                                <p class="title">УБОРКА ПОСЛЕ СТРОЙКИ</p>
+
+                                <p class="text">
+                                    Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                    включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                    от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                    пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                    работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                                </p>
+
+                                <div class="button">
+                                    <a href="#popup" class="btn popup-link">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--.......................SPECIALIST.......................-->
+
+        <!--<section class="specialist">-->
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-lg-6">-->
+        <!--<p class="title text-center">-->
+        <!--ЗАКАЗАТЬ ВЫЕЗД СПЕЦИАЛИСТА НА ОБЪЕКТ ДЛЯ ПРОСЧЕТА СТОИМОТИ ПРЯМ СЕЙЧАС-->
+        <!--</p>-->
+
+        <!--<div class="holder">-->
+        <!--<ul class="list-reset">-->
+        <!--<li>-->
+        <!--<i class="far fa-check-circle"></i> Доставка 1 - 2 дня по Украине-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<i class="far fa-check-circle"></i> Европейское качество материала-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<i class="far fa-check-circle"></i> Гарантия 10 лет-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<div class="image">-->
+        <!--<img src="images/man.png" alt="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-lg-6">-->
+        <!--<h4 class="form-title text-center">-->
+        <!--<span id="customTextForm">-->
+        <!--Заполните форму ниже и получите консультацию на объекте-->
+        <!--</span>-->
+        <!--</h4>-->
+
+        <!--<form class="order-main">-->
+        <!--<input placeholder="Имя" type="text" name="name" required>-->
+        <!--<input placeholder="Телефон" type="tel" name="phone"-->
+        <!--class="phoneidcl" required>-->
+        <!--<input name="order" type="hidden" value="Заполните форму и получите консультацию">-->
+        <!--<button class="disbutt" disabled>-->
+        <!--<span>Заказать</span>-->
+        <!--</button>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+
+        <!--.......................USE OF OUR PRODUCTS.......................-->
+
+        <!--<section class="use">-->
+        <!--<div class="container">-->
+        <!--<h4 class="caption">-->
+        <!--ПРЕИМУЩЕСТВО ИСПОЛЬЗОВАНИЯ НАШЕЙ ПРОДУКЦИИ-->
+        <!--</h4>-->
+        <!--<div class="row d-flex align-items-center">-->
+        <!--<div class="col-lg-6">-->
+
+        <!--&lt;!&ndash;Nav tabs&ndash;&gt;-->
+
+        <!--<nav>-->
+        <!--<div class="nav nav-tabs" id="nav-tab" role="tablist">-->
+        <!--<a class="nav-item nav-link active" id="nav-mortgage-tab" data-toggle="tab" href="#nav-mortgage" role="tab" aria-controls="nav-mortgage" aria-selected="true">-->
+        <!--<div class="item">-->
+        <!--<span class="icon-mortgage-1"></span>-->
+        <!--<p>ЭКОНОМИЯ СВОБОДНОГО ПРОСТРАНСТВА</p>-->
+        <!--</div>-->
+        <!--</a>-->
+        <!--<a class="nav-item nav-link" id="nav-reliability-tab" data-toggle="tab" href="#nav-reliability" role="tab" aria-controls="nav-reliability" aria-selected="false">-->
+        <!--<div class="item">-->
+        <!--<span class="icon-reliability"></span>-->
+        <!--<p>НАДЁЖНОСТЬ И ФУНКЦИОНАЛЬНОСТЬ КОНСТРУКЦИИ</p>-->
+        <!--</div>-->
+        <!--</a>-->
+        <!--<a class="nav-item nav-link" id="nav-blueprint-tab" data-toggle="tab" href="#nav-blueprint" role="tab" aria-controls="nav-blueprint" aria-selected="false">-->
+        <!--<div class="item">-->
+        <!--<span class="icon-blueprint"></span>-->
+        <!--<p>ПРОСТОЕ ЗОНИРОВАНИЕ ПОМЕЩЕНИЯ</p>-->
+        <!--</div>-->
+        <!--</a>-->
+        <!--<a class="nav-item nav-link" id="nav-check-in-tab" data-toggle="tab" href="#nav-check-in" role="tab" aria-controls="nav-check-in" aria-selected="false">-->
+        <!--<div class="item">-->
+        <!--<span class="icon-check-in"></span>-->
+        <!--<p>ДЛИТЕЛЬНЫЙ СРОК ЭКСПЛУАТАЦИИ</p>-->
+        <!--</div>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</nav>-->
+
+        <!--</div>-->
+        <!--<div class="col-lg-6">-->
+
+        <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+
+        <!--<div class="tab-content" id="nav-tabContent">-->
+        <!--<div class="tab-pane fade show active" id="nav-mortgage" role="tabpanel" aria-labelledby="nav-mortgage-tab">-->
+        <!--<div class="image-holder">-->
+        <!--<div class="image-big">-->
+        <!--<img src="images/caset1.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="small">-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset2.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small middle">-->
+        <!--<img src="images/caset3.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset4.png" alt="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="tab-pane fade" id="nav-reliability" role="tabpanel" aria-labelledby="nav-reliability-tab">-->
+        <!--<div class="image-holder">-->
+        <!--<div class="image-big">-->
+        <!--<img src="images/caset2.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="small">-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset3.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small middle">-->
+        <!--<img src="images/caset4.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset1.png" alt="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="tab-pane fade" id="nav-blueprint" role="tabpanel" aria-labelledby="nav-blueprint-tab">-->
+        <!--<div class="image-holder">-->
+        <!--<div class="image-big">-->
+        <!--<img src="images/caset3.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="small">-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset4.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small middle">-->
+        <!--<img src="images/caset1.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset2.png" alt="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="tab-pane fade" id="nav-check-in" role="tabpanel" aria-labelledby="nav-check-in-tab">-->
+        <!--<div class="image-holder">-->
+        <!--<div class="image-big">-->
+        <!--<img src="images/caset4.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="small">-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset1.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small middle">-->
+        <!--<img src="images/caset2.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="image-small">-->
+        <!--<img src="images/caset3.png" alt="">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+
+        <!--.......................COOPERATION.......................-->
+
+        <!--<section class="cooperation">-->
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-lg-5">-->
+        <!--<p class="title">-->
+        <!--ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ-->
+        <!--<p>-->
+        <!--<p class="text">-->
+        <!--Наша компания приглашает к сотрудничеству aрхитекторов, дизайнеров, прорабов-->
+        <!--</p>-->
+        <!--</div>-->
+
+        <!--<div class="col-lg-7">-->
+        <!--<form class="order-main">-->
+        <!--<h4 class="form-title">-->
+        <!--<span id="customTextForm2">-->
+        <!--<span class="block">Заполните форму и получите</span> коммерческое предложение в течении 1 часа-->
+        <!--</span>-->
+        <!--</h4>-->
+        <!--<input placeholder="Имя" type="text" name="name" required>-->
+        <!--<input id="phone" placeholder="Телефон" type="tel" name="phone"-->
+        <!--class="phoneidcl" required>-->
+        <!--<input name="order" type="hidden" value="Заполните форму и получите коммерческое предложение">-->
+        <!--<button class="disbutt" disabled>-->
+        <!--<span>Получить предложение</span>-->
+        <!--</button>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+
+        <!--.......................GALLERY.......................-->
+
+        <!--<section class="gallery" id="gallery">-->
+        <!--<div class="container">-->
+        <!--<h4 class="caption">-->
+        <!--ГАЛЕРЕЯ ВЫПОЛНЕННЫХ РАБОТ-->
+        <!--</h4>-->
+
+        <!--<div class="row popup-gallery">-->
+        <!--<div class="col-lg-4 col-6">-->
+        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
+        <!--</div>-->
+
+        <!--<div class="col-lg-4 col-6">-->
+        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
+        <!--</div>-->
+
+        <!--<div class="col-lg-4 col-6">-->
+        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
+        <!--</div>-->
+
+        <!--<div class="col-lg-4 col-6">-->
+        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
+        <!--</div>-->
+
+        <!--<div class="col-lg-4 col-6">-->
+        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
+        <!--</div>-->
+
+        <!--<div class="col-lg-4 col-6">-->
+        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+
+        <!--.......................REVIEWS.......................-->
+
+        <!--<section class="reviews">-->
+        <!--<div class="container">-->
+
+        <!--<h4 class="caption">-->
+        <!--ОТЗЫВЫ НАШИХ КЛИЕНТОВ-->
+        <!--</h4>-->
+
+        <!--<div class="reviews-slider">-->
+
+        <!--<div class="reviews-body">-->
+        <!--<div class="reviews-title">-->
+        <!--<div class="image">-->
+        <!--<img src="images/foto1.png" alt="клиент">-->
+        <!--</div>-->
+        <!--<div class="title">-->
+        <!--<p class="name">Балицкий Александр</p>-->
+        <!--<p class="town">Киев</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<p class="reviews-text">-->
+        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
+        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
+        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
+        <!--</p>-->
+        <!--</div>-->
+
+        <!--<div class="reviews-body">-->
+        <!--<div class="reviews-title">-->
+        <!--<div class="image">-->
+        <!--<img src="images/foto2.png" alt="клиент">-->
+        <!--</div>-->
+        <!--<div class="title">-->
+        <!--<p class="name">Бондар Виталия</p>-->
+        <!--<p class="town">Днепр</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<p class="reviews-text">-->
+        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
+        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
+        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
+        <!--</p>-->
+        <!--</div>-->
+
+        <!--<div class="reviews-body">-->
+        <!--<div class="reviews-title">-->
+        <!--<div class="image">-->
+        <!--<img src="images/foto3.png" alt="клиент">-->
+        <!--</div>-->
+        <!--<div class="title">-->
+        <!--<p class="name">Король Юрий</p>-->
+        <!--<p class="town">Киев</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<p class="reviews-text">-->
+        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
+        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
+        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
+        <!--</p>-->
+        <!--</div>-->
+
+        <!--<div class="reviews-body">-->
+        <!--<div class="reviews-title">-->
+        <!--<div class="image">-->
+        <!--<img src="images/foto1.png" alt="клиент">-->
+        <!--</div>-->
+        <!--<div class="title">-->
+        <!--<p class="name">Балицкий Александр</p>-->
+        <!--<p class="town">Киев</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<p class="reviews-text">-->
+        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
+        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
+        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
+        <!--</p>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--</section>-->
+
+        <!--.......................CERTIFICATES.......................-->
+
+        <!--<section class="certificates">-->
+        <!--<div class="container">-->
+        <!--<h4 class="caption">-->
+        <!--СЕРТИФИКАТЫ-->
+        <!--</h4>-->
+        <!--<div class="gallery-slider">-->
+        <!--<div class="certificates-slider">-->
+        <!--<div class="gallery-image">-->
+        <!--<img src="images/certificate.png" alt="сертификат">-->
+        <!--</div>-->
+
+        <!--<div class="gallery-image">-->
+        <!--<img src="images/certificate.png" alt="сертификат">-->
+        <!--</div>-->
+
+        <!--<div class="gallery-image">-->
+        <!--<img src="images/certificate.png" alt="сертификат">-->
+        <!--</div>-->
+
+        <!--<div class="gallery-image">-->
+        <!--<img src="images/certificate.png" alt="сертификат">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</section>-->
+    </main>
+
+    <!--.......................FOOTER.......................-->
+
+    <!--<footer class="footer" id="contact">-->
+    <!--<div class="container">-->
+    <!--<h4 class="caption">-->
+    <!--КОНТАКТЫ-->
+    <!--</h4>-->
+    <!--<div class="row d-flex align-items-center">-->
+    <!--<div class="col-lg-2">-->
+    <!--<div class="contact">-->
+    <!--<div class="contact-block">-->
+    <!--<p class="contact-title">-->
+    <!--Телефоны:-->
+    <!--</p>-->
+    <!--<p class="contact-text">-->
+    <!--<a href="tel:+380638442311" class="phone">+380 63 844 23 11 </a>-->
+    <!--<a href="tel:+380668443211" class="phone">+380 66 844 32 11 </a>-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--<div class="contact-block middle">-->
+    <!--<p class="contact-title">-->
+    <!--Почта:-->
+    <!--</p>-->
+    <!--<p class="contact-text">-->
+    <!--<a href="mailto:iap@info.com.ua"-->
+    <!--class="phone">iap@info.com.ua</a>-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--<div class="contact-block">-->
+    <!--<p class="contact-title">-->
+    <!--Адрес:-->
+    <!--</p>-->
+    <!--<p class="contact-text">-->
+    <!--Киев, Банковская 65а-->
+    <!--</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="col-lg-6">-->
+    <!--<div class="map">-->
+    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5335.057346303622!2d30.485790767551773!3d50.45964072690475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x40d4ce7976bee27b%3A0x1d3e315c9ebba01c!2z0JvRg9C6J9GP0L3RltCy0YHRjNC60LA!3m2!1d50.461178999999994!2d30.483670999999998!4m5!1s0x40d4ce65bb637e0d%3A0x15a04ce32f6333ef!2z0JHQtdGF0YLQtdGA0LXQstGB0LrQuNC5INC_0LXRgC4sIDE00JUsINCa0LjQtdCyLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwMjAwMA!3m2!1d50.459371499999996!2d30.4965899!5e0!3m2!1sru!2sua!4v1574811075804!5m2!1sru!2sua"-->
+    <!--width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-lg-4">-->
+    <!--<form class="order-main">-->
+    <!--<h4 class="form-title">-->
+    <!--<span id="customTextForm3">-->
+    <!--Остались вопросы?-->
+    <!--</span>-->
+    <!--</h4>-->
+    <!--<input placeholder="Имя" type="text" name="name" required>-->
+    <!--<input placeholder="Телефон" type="tel" name="phone"-->
+    <!--class="phoneidcl" required>-->
+    <!--<input name="order" type="hidden" value="Остались вопросы?">-->
+    <!--<button class="disbutt" disabled>-->
+    <!--<span>Заказать звонок</span>-->
+    <!--</button>-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="footer-bottom">-->
+    <!--<div class="row">-->
+    <!--<div class="col-lg-4">-->
+    <!--<div class="social">-->
+    <!--<a href="#"><span class="icon-facebook"></span></a>-->
+    <!--<a href="#"> <span class="icon-inst"></span></a>-->
+    <!--<a href="#"><span class="icon-youtube"></span></a>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="offset-lg-2 col-lg-6">-->
+    <!--<div class="logo-info">-->
+    <!--<div class="logo">-->
+    <!--<a href="#">-->
+    <!--<img class="logo" src="images/logo.png" alt="logo">-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</footer>-->
+    <!--<div class="devgen p-1 text-center">-->
+    <!--<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>-->
+    <!--</div>-->
+</div>
+
+<!--/////pop-up//////-->
+
+<!--<div id="popup" class="mfp-hide popup">-->
+<!--<div class="container">-->
+
+<!--<div class="logo">-->
+<!--<a href="#">-->
+<!--<img class="logo" src="images/logo.png" alt="logo">-->
+<!--</a>-->
+<!--</div>-->
+
+<!--<form class="order-main2">-->
+<!--<h4 class="form-title">-->
+<!--<span id="customTextForm4">-->
+<!--Заполните форму и с вами свяжется наш специалист в течении 15 минут для БЕСПЛАТНОЙ консультации-->
+<!--</span>-->
+<!--</h4>-->
+<!--<input placeholder="Имя" type="text" name="name" required>-->
+<!--<input placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>-->
+<!--<input name="order" type="hidden" id="input_order">-->
+<!--<button class="disbutt" disabled>-->
+<!--<span>Получить консультацию </span>-->
+<!--</button>-->
+<!--<p class="form-text">Подписывайтесь на наши социальные сети и будьте всегда в курсе новостей и новинок нашей компании</p>-->
+<!--<div class="social">-->
+<!--<a href="#"><span class="icon-facebook"></span></a>-->
+<!--<a href="#"> <span class="icon-inst"></span></a>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--pop-up end-->
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Fontawesome -->
+<script defer src="js/all.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slick -->
+<script src="js/slick.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Input Mask -->
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<!-- Page Scroll -->
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+<!--&lt;!&ndash;AOS &ndash;&gt;-->
+<!--<script src="https://unpkg.com/aos@next/dist/aos.js"></script>-->
+<!--<script>-->
+<!--AOS.init();-->
+<!--</script>-->
+<!-- Main JS -->
+<script src="js/main.js"></script>
+</body>
+</html>

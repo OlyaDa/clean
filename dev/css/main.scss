@@ -1,0 +1,332 @@
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
+
+@import "header";
+@import "banner";
+@import "why";
+@import "services";
+@import "specialist";
+@import "use";
+@import "reviews";
+@import "certificates";
+@import "cooperation";
+@import "gallery";
+@import "footer";
+
+
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Light'),
+  local('Lato-Light'),
+  url('../../public/fonts/latolight.woff2') format('woff2'),
+  url('../../public/fonts/latolight.woff') format('woff'),
+  url('../../public/fonts/latolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Medium'),
+  local('Lato-Medium'),
+  url('../../public/fonts/latomedium.woff2') format('woff2'),
+  url('../../public/fonts/latomedium.woff') format('woff'),
+  url('../../public/fonts/latomedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Semibold'),
+  local('Lato-Semibold'),
+  url('../../public/fonts/latosemibold.woff2') format('woff2'),
+  url('../../public/fonts/latosemibold.woff') format('woff'),
+  url('../../public/fonts/latosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../public/fonts/icomoon.eot?31g4lx');
+  src:  url('../../public/fonts/icomoon.eot?31g4lx#iefix') format('embedded-opentype'),
+  url('../../public/fonts/icomoon.ttf?31g4lx') format('truetype'),
+  url('../../public/fonts/icomoon.woff?31g4lx') format('woff'),
+  url('../../public/fonts/icomoon.svg?31g4lx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account:before {
+  content: "\e900";
+}
+.icon-architecture:before {
+  content: "\e901";
+}
+.icon-arrow-left:before {
+  content: "\e902";
+  color: #fff;
+  font-size: 10px;
+}
+.icon-arrow-long:before {
+  content: "\e903";
+  color: #6b4184;
+  font-size: 10px;
+}
+.icon-arrow-right:before {
+  content: "\e904";
+  color: #fff;
+  font-size: 10px;
+}
+.icon-email:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-focus:before {
+  content: "\e907";
+}
+.icon-jam-instagram:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-play:before {
+  content: "\e90a";
+  font-size: 27px;
+  color: #6B4184;
+}
+.icon-play2:before {
+  content: "\e90b";
+}
+.icon-room:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-wash:before {
+  content: "\e90d";
+}
+.icon-youtube:before {
+  content: "\e90e";
+  color: #fff;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.container-fluid {
+  padding: 0 0 !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a, a:visited, a:focus, a:active, a:hover{
+  outline:0 none !important;
+}
+
+.devgen a {
+  font-family: $font_text;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: -.02em;
+  color: rgba(0, 0, 0, 0.7);
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+/////////////////////POPUP///////////////////
+
+.popup {
+  background: #FFFFFF;
+  max-width: 538px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 40px 0 40px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+  .logo {
+    max-width: 100px;
+    max-height: 50px;
+    margin: 0 auto 20px auto;
+  }
+
+  form {
+    display: inline-block;
+    background: #fff;
+    padding: 0 40px 0 40px;
+    text-align: center;
+
+    .form-title {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .form-text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #000;
+      margin-top: 20px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 0;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -.02em;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid #08203E;
+      font-family: $font_text;
+      font-style: normal;
+      background: transparent;
+      outline: none;
+      color: #000;
+    }
+
+    input[type="text"] {
+      margin-bottom:20px;
+    }
+
+    input[type="tel"] {
+      margin-bottom: 20px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    input::-webkit-input-placeholder { color: #000; }
+    input::-ms-input-placeholder { color: #000; }
+    input::-ms-input-placeholder { color: #000; }
+    input::placeholder { color: #000; }
+
+  button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 1px solid #c4956a;
+    font-family: $font_text;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #c4956a;
+    color: #FFFFFF;
+    border-radius: 0;
+    &:hover {
+      background-color: transparent;
+      color: #c4956a;
+    }
+  }
+
+    .social {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      span {
+        font-size: 30px;
+      }
+    }
+
+  }
+
+  ///media
+
+  @media (max-width: 580px) {
+    padding: 20px 10px;
+    form {
+      padding: 20px 0 20px 0;
+      display: block;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
