@@ -5,7 +5,7 @@ $caption_text: Cera Pro, sans-serif;
 @import "banner";
 @import "why";
 @import "services";
-@import "specialist";
+@import "recommend";
 @import "use";
 @import "reviews";
 @import "certificates";
@@ -178,8 +178,37 @@ img {
   height: auto;
 }
 
-a, a:visited, a:focus, a:active, a:hover{
-  outline:0 none !important;
+input, textarea {outline:none !important;}
+input:active, textarea:active {outline:none !important;}
+:focus {outline:none !important;}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+}
+
+a::-moz-focus-inner {
+  border: 0;
+}
+
+a:visited, a:focus, a:active, a:hover, a:focus-within {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn:visited, .btn:focus, .btn:active, .btn:hover, .btn:focus-within {
+  outline: none !important;
+}
+
+.button:visited, .button:focus, .button:active, .button:hover, .button:focus-within {
+  outline: none !important;
+}
+
+button:visited, button:focus, button:active, button:hover, button:focus-within {
+  outline: none !important;
 }
 
 .devgen a {

@@ -2,11 +2,11 @@
 .why {
   background: #ffffff;
   background: url("../../public/images/bg-why.png") top left no-repeat;
-  background-size: auto;
+  background-size: auto 100%;
   position: relative;
   margin-top: -70px;
-  z-index: 1;
-  padding: 126px 0 60px 0;
+  z-index: 2;
+  padding: 126px 0 245px 0;
 
   .caption {
     font-weight: 800;
@@ -26,6 +26,10 @@
     width: 100%;
   }
 
+  .first-text {
+    margin-bottom: 35px;
+  }
+
   .slider {
     max-width: 486px;
     max-height: 320px;
@@ -34,7 +38,7 @@
   }
 
   .why-slider {
-    outline: none!important;
+    outline: none !important;
   }
 
   .image {
@@ -44,6 +48,14 @@
     top: 88px;
     left: -140px;
     z-index: 1;
+
+    .image-grad {
+      width: 141px;
+      height: 54px;
+      position: absolute;
+      left: 0;
+      top: -53px;
+    }
   }
 
   .circle {
@@ -78,8 +90,6 @@
 
   .slick-prev, .slick-next {
     bottom: -124px;
-    //font-size: 16px;
-    //line-height: 0;
     position: absolute;
     display: block;
     width: 50px;
@@ -89,7 +99,6 @@
     transform: translate(0, -50%);
     cursor: pointer;
     color: #fff;
-    //border: 1px solid #0194FE;
     outline: none !important;
     background: #6B4184;
     z-index: 1;
@@ -97,61 +106,157 @@
 
   .slick-prev:active, .slick-next:active {
     color: #fff;
-    //border: 1px solid #0194FE;
-    //background: #0194FE;
   }
   ///slick-prev slick-next end
 
+  //slider dots begin
+
+  .slick-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+  }
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+    border: 1px #6B4184 solid;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    border: 1px #6B4184 solid;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #6B4184;
+    border-radius: 50%;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+
+  //slider dots end
 
   ////media
 
+  @media (max-width: 1240px) {
+    .image {
+      left: -80px;
+
+      .image-grad {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1155px) {
+   p {
+     max-width: 480px;
+   }
+  }
+
+  @media (max-width: 1075px) {
+    .image {
+      left: -50px;
+    }
+    p {
+      max-width: 445px;
+    }
+  }
+
   @media (max-width: 991px) {
-    .text {
-      margin-bottom: 40px;
-      max-width: 100%;
+    padding: 60px 0 200px 0;
+
+    .holder {
+      width: 626px;
+      margin: auto auto 100px;
     }
 
-    .catalog-card {
-      margin-bottom: 20px;
+    .image {
+      left: -140px;
+    }
+
+    .caption {
+      margin-top: 45px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .first-text {
+      margin-bottom: 15px;
     }
   }
 
   @media (max-width: 768px) {
-    padding: 40px 0 20px 0;
-
     .caption {
       margin-bottom: 20px;
-      font-size: 20px;
+      font-size: 24px;
+      line-height: 40px;
     }
-
-    .image-video {
+    p {
       margin-bottom: 20px;
     }
-
-    .text {
-      margin-bottom: 20px;
+    .first-text {
+      margin-bottom: 10px;
     }
+
   }
 
-  @media (max-width: 767px) {
-    .catalog-card span {
-      font-size: 40px;
-      margin-bottom: 0;
-      margin-top: 20px;
+  @media (max-width: 660px) {
+    .holder {
+      width: 100%;
     }
 
-    .catalog-card {
-      min-height: 130px;
+    .slider {
+      margin: auto;
     }
 
-    .catalog-card p {
-      margin-bottom: 0;
+   .image {
+     position: relative;
+     top: 0;
+     left: 0;
+     margin: auto auto 20px;
+   }
+
+    .slick-prev.slick-arrow {
+      right: 50%;
+    }
+
+    .slick-next {
+      right: 38%;
+    }
+
+    .slick-prev, .slick-next {
+      bottom: -100px;
     }
   }
 
   @media (max-width: 576px) {
-    .caption {
-      font-size: 18px;
+   .why-slider {
+     margin-bottom: 120px;
+   }
+  }
+
+  @media (max-width: 500px) {
+    .why-slider {
+      margin-bottom: 85px;
     }
   }
 

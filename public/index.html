@@ -14,10 +14,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic"
           rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic"-->
-    <!--rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap"-->
-    <!--rel="stylesheet">-->
 
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -53,13 +49,17 @@
                     <ul class=" menu list-reset">
                         <li><a href="#" class="nav-link-new">О нас</a></li>
                         <li>
-                            <div class="custom-select">
-                                <select>
-                                    <option>Виды уборки</option>
-                                    <option><a href="#" class="nav-link-new">Генеральная</a></option>
-                                    <option><a href="#" class="nav-link-new">Поддерживающая</a></option>
-                                    <option><a href="#" class="nav-link-new">После стройки</a></option>
-                                </select>
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Виды уборки
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Генеральная</a>
+                                    <a class="dropdown-item" href="#">Поддерживающая</a>
+                                    <a class="dropdown-item" href="#">После стройки</a>
+                                </div>
                             </div>
                         </li>
                         <li><a href="#" class="nav-link-new">Отзывы</a></li>
@@ -67,6 +67,33 @@
                             <div class="button">
                                 <a href="#popup" class="btn popup-link">
                                     Заказать звонок
+                                </a>
+                            </div>
+                        </li>
+                        <li class="social">
+                            <div class="social-icons">
+                                <a href="#">
+                                    <div class="circle-big">
+                                        <div class="circle-small">
+                                            <span class="icon-facebook"></span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="circle-big">
+                                        <div class="circle-small">
+                                            <span class="icon-jam-instagram"></span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="circle-big">
+                                        <div class="circle-small">
+                                            <span class="icon-youtube"></span>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                         </li>
@@ -135,9 +162,13 @@
                         <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
                         <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
                         <button class="disbutt" disabled>
-                            <span class="btn">Получить просчет</span>
+                            <span class="btn">Заказать звонок</span>
                         </button>
                     </div>
+
+                    <button class="disbutt mobile" disabled>
+                        <span class="btn">Заказать звонок</span>
+                    </button>
                 </form>
                 <!--order-main-->
 
@@ -155,11 +186,11 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <h2 class="caption">
                             ПОЧЕМУ SOLIDCARE CLEANING
                         </h2>
-                        <p style="margin-bottom: 35px;">
+                        <p class="first-text">
                             В SOLIDCARE работают опытные профессионалы, которые, предоставляя максимально качественный
                             сервис, затрагивающий каждый сантиметр помещения, умело применяют лучшие технологии по
                             очистке и уходу за поверхностями, материалы , инструменты и оборудование ведущих мировых
@@ -173,24 +204,28 @@
                         </p>
                     </div>
 
-                    <div class="col-md-6 text-right">
-                        <div class="slider">
-                            <div class="image">
-                                <img src="images/video1.png" alt="клининговая комманда">
-                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                    <div class="col-lg-6 text-right">
+                        <div class="holder">
+                            <div class="slider">
+                                <div class="image">
+                                    <img class="image-grad" src="images/gradient.png" alt="gradient">
+
+                                    <img src="images/video1.png" alt="клининговая комманда">
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
                                 <span class="circle">
                                     <span class="icon-play"></span>
                                 </span>
-                                </a>
-                            </div>
-
-                            <div class="why-slider">
-                                <div class="image-slider">
-                                    <img src="images/command.png" alt="клининговая комманда">
+                                    </a>
                                 </div>
 
-                                <div class="image-slider">
-                                    <img src="images/command.png" alt="клининговая комманда">
+                                <div class="why-slider">
+                                    <div class="image-slider">
+                                        <img src="images/command.png" alt="клининговая комманда">
+                                    </div>
+
+                                    <div class="image-slider">
+                                        <img src="images/command.png" alt="клининговая комманда">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,77 +244,148 @@
                     Для квартир, коттеджей и офисов
                 </h2>
 
-                <div class="slider">
-                    <div class="items" id="items">
-                        <div class="item left" id="left" onclick="swap(0)">
-                            <div class="name">
-                                <p>ГЕНЕРАЛЬНАЯ УБОРКА</p>
-                            </div>
-
-                            <div class="info">
-                                <p class="title">ГЕНЕРАЛЬНАЯ УБОРКА</p>
-
-                                <p class="text">
-                                    Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
-                                    включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
-                                    от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
-                                    пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
-                                    работают, Вам оставаться дома необязательно: просто скажите, куда привезти
-                                </p>
-
-                                <div class="button">
-                                    <a href="#popup" class="btn popup-link">
-                                        Подробнее
-                                    </a>
-                                </div>
-                            </div>
+                <div class="items" id="items">
+                    <div class="item left" id="left" onclick="swap(0)">
+                        <div class="name">
+                            <p>ГЕНЕРАЛЬНАЯ УБОРКА</p>
                         </div>
 
-                        <div class="item center" id="center" onclick="swap(1)" style="">
-                            <div class="name">
-                                <p>ПОДДЕРЖИВАЮЩАЯ УБОРКА</p>
-                            </div>
+                        <div class="info">
+                            <p class="title">ГЕНЕРАЛЬНАЯ УБОРКА</p>
 
-                            <div class="info">
-                                <p class="title">ПОДДЕРЖИВАЮЩАЯ УБОРКА</p>
+                            <p class="text">
+                                Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                            </p>
 
-                                <p class="text">
-                                    Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
-                                    включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
-                                    от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
-                                    пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
-                                    работают, Вам оставаться дома необязательно: просто скажите, куда привезти
-                                </p>
-
-                                <div class="button">
-                                    <a href="#popup" class="btn popup-link">
-                                        Подробнее
-                                    </a>
-                                </div>
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Подробнее
+                                </a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="item right" id="right" onclick="swap(2)">
-                            <div class="name">
-                                <p>УБОРКА ПОСЛЕ СТРОЙКИ</p>
+                    <div class="item center" id="center" onclick="swap(1)" style="">
+                        <div class="name">
+                            <p>ПОДДЕРЖИВАЮЩАЯ УБОРКА</p>
+                        </div>
+
+                        <div class="info">
+                            <p class="title">ПОДДЕРЖИВАЮЩАЯ УБОРКА</p>
+
+                            <p class="text">
+                                Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                            </p>
+
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Подробнее
+                                </a>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="info">
-                                <p class="title">УБОРКА ПОСЛЕ СТРОЙКИ</p>
+                    <div class="item right" id="right" onclick="swap(2)">
+                        <div class="name">
+                            <p>УБОРКА ПОСЛЕ СТРОЙКИ</p>
+                        </div>
 
-                                <p class="text">
-                                    Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
-                                    включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
-                                    от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
-                                    пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
-                                    работают, Вам оставаться дома необязательно: просто скажите, куда привезти
-                                </p>
+                        <div class="info">
+                            <p class="title">УБОРКА ПОСЛЕ СТРОЙКИ</p>
 
-                                <div class="button">
-                                    <a href="#popup" class="btn popup-link">
-                                        Подробнее
-                                    </a>
-                                </div>
+                            <p class="text">
+                                Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                            </p>
+
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--for <860px-->
+
+                <div class="mobile-cleaning">
+                    <div class="item">
+                        <div class="image-mob">
+                            <img src="images/service1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="title">ГЕНЕРАЛЬНАЯ УБОРКА</p>
+
+                            <p class="text">
+                                Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                            </p>
+
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image-mob">
+                            <img src="images/service2.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="title">ПОДДЕРЖИВАЮЩАЯ УБОРКА</p>
+
+                            <p class="text">
+                                Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                            </p>
+
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image-mob">
+                            <img src="images/service3.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="title">УБОРКА ПОСЛЕ СТРОЙКИ</p>
+
+                            <p class="text">
+                                Ежедневная поддерживающая уборка квартиры, дома, офиса – комплексная услуга,
+                                включающая расстановку вещей по местам, очистку поверхностей, мебели, подоконников
+                                от загрязнений и пыли. Также при ее выполнении пылесосятся ковровые покрытия, моется
+                                пол, выносится мусор. Клинеры приезжают по адресу в оговоренное время. Пока они
+                                работают, Вам оставаться дома необязательно: просто скажите, куда привезти
+                            </p>
+
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Подробнее
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -287,54 +393,151 @@
             </div>
         </section>
 
-        <!--.......................SPECIALIST.......................-->
+        <!--.......................RECOMMEND.......................-->
 
-        <!--<section class="specialist">-->
-        <!--<div class="container">-->
-        <!--<div class="row">-->
-        <!--<div class="col-lg-6">-->
-        <!--<p class="title text-center">-->
-        <!--ЗАКАЗАТЬ ВЫЕЗД СПЕЦИАЛИСТА НА ОБЪЕКТ ДЛЯ ПРОСЧЕТА СТОИМОТИ ПРЯМ СЕЙЧАС-->
-        <!--</p>-->
+        <section class="recommend">
+            <div class="container">
+                <h2 class="caption">
+                    НАС РЕКОМЕНДУЮТ
+                </h2>
+                <div class="recommend-slider">
+                    <div class="slider">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="info-block">
 
-        <!--<div class="holder">-->
-        <!--<ul class="list-reset">-->
-        <!--<li>-->
-        <!--<i class="far fa-check-circle"></i> Доставка 1 - 2 дня по Украине-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<i class="far fa-check-circle"></i> Европейское качество материала-->
-        <!--</li>-->
-        <!--<li>-->
-        <!--<i class="far fa-check-circle"></i> Гарантия 10 лет-->
-        <!--</li>-->
-        <!--</ul>-->
-        <!--<div class="image">-->
-        <!--<img src="images/man.png" alt="">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+                                    <div class="image-grad">
+                                        <img src="images/gradient2.png" alt="gradient">
+                                    </div>
 
-        <!--<div class="col-lg-6">-->
-        <!--<h4 class="form-title text-center">-->
-        <!--<span id="customTextForm">-->
-        <!--Заполните форму ниже и получите консультацию на объекте-->
-        <!--</span>-->
-        <!--</h4>-->
+                                    <div class="icons">
+                                        <img src="images/account.png" alt="">
+                                        <img src="images/architecture.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                        <img src="images/wash.png" alt="">
+                                    </div>
+                                    <ul class="list-reset">
+                                        <li>
+                                            <p class="caption">Клиент</p>
+                                            <p class="info">Иванов Иван Иванович</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">объект</p>
+                                            <p class="info">Загородный дом</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">Площадь</p>
+                                            <p class="info">210 м<sup>2</sup></p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">тип уборки</p>
+                                            <p class="info">Генеральная уборка</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-        <!--<form class="order-main">-->
-        <!--<input placeholder="Имя" type="text" name="name" required>-->
-        <!--<input placeholder="Телефон" type="tel" name="phone"-->
-        <!--class="phoneidcl" required>-->
-        <!--<input name="order" type="hidden" value="Заполните форму и получите консультацию">-->
-        <!--<button class="disbutt" disabled>-->
-        <!--<span>Заказать</span>-->
-        <!--</button>-->
-        <!--</form>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</section>-->
+                            <div class="col-lg-4">
+                                <div class="video">
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                        <div class="image-play">
+                                            <img src="images/play.png" alt="">
+                                        </div>
+                                        <p class="watch">Смотреть видеоотзыв</p>
+                                    </a>
+                                    <div class="bg"></div>
+                                    <div class="image-video">
+                                        <img src="images/video2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="clean">
+                                    <div class="image-clean">
+                                        <p class="before">До уборки</p>
+                                        <img src="images/before.png" alt="">
+                                    </div>
+
+                                    <div class="image-clean">
+                                        <p class="after">После уборки</p>
+                                        <img src="images/after.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="info-block">
+
+                                    <div class="image-grad">
+                                        <img src="images/gradient2.png" alt="gradient">
+                                    </div>
+
+                                    <div class="icons">
+                                        <img src="images/account.png" alt="">
+                                        <img src="images/architecture.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                        <img src="images/wash.png" alt="">
+                                    </div>
+                                    <ul class="list-reset">
+                                        <li>
+                                            <p class="caption">Клиент</p>
+                                            <p class="info">Иванов Иван Иванович</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">объект</p>
+                                            <p class="info">Загородный дом</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">Площадь</p>
+                                            <p class="info">210 м<sup>2</sup></p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">тип уборки</p>
+                                            <p class="info">Генеральная уборка</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="video">
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                        <div class="image-play">
+                                            <img src="images/play.png" alt="">
+                                        </div>
+                                        <p class="watch">Смотреть видеоотзыв</p>
+                                    </a>
+                                    <div class="bg"></div>
+                                    <div class="image-video">
+                                        <img src="images/video2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="clean">
+                                    <div class="image-clean">
+                                        <p class="before">До уборки</p>
+                                        <img src="images/before.png" alt="">
+                                    </div>
+
+                                    <div class="image-clean">
+                                        <p class="after">После уборки</p>
+                                        <img src="images/after.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <!--.......................USE OF OUR PRODUCTS.......................-->
 
@@ -778,6 +981,10 @@
         crossorigin="anonymous"></script>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 <!-- Fontawesome -->
 <script defer src="js/all.js"></script>
 <!-- Bootstrap -->
@@ -790,11 +997,6 @@
 <script src="js/jquery.inputmask.bundle.min.js"></script>
 <!-- Page Scroll -->
 <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-<!--&lt;!&ndash;AOS &ndash;&gt;-->
-<!--<script src="https://unpkg.com/aos@next/dist/aos.js"></script>-->
-<!--<script>-->
-<!--AOS.init();-->
-<!--</script>-->
 <!-- Main JS -->
 <script src="js/main.js"></script>
 </body>

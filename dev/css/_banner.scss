@@ -5,7 +5,7 @@
   background: url("../../public/images/banner.png") top left no-repeat;
   background-size: 100% 100%;
   padding-top: 87px;
-  z-index: 2;
+  z-index: 3;
 
   .banner-inner {
     min-height: calc(100vh - 87px);
@@ -15,6 +15,7 @@
   }
 
   .caption {
+    margin-top: 20px;
     font-weight: 800;
     font-size: 45px;
     line-height: 61px;
@@ -27,8 +28,8 @@
     font-size: 28px;
     line-height: 186.68%;
     color: rgba(17, 5, 52, 0.8);
-    margin: 0;
     max-width: 790px;
+    margin: 0 0 35px;
   }
 
   .social-icons {
@@ -89,6 +90,45 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      button {
+        background: #6B4184;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        border-radius: 30px;
+        border: 0;
+        margin-left: 101px;
+        min-width: 249px;
+        width: 100%;
+
+        .btn {
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 23px;
+          text-align: center;
+          padding: 14px 45px;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .mobile {
+      background: #6B4184;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      border-radius: 30px;
+      border: 0;
+      margin-left: 101px;
+      max-width: 249px;
+      width: 100%;
+      display: none;
+
+      .btn {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        padding: 14px 45px;
+        color: #FFFFFF;
+      }
     }
 
     p {
@@ -96,7 +136,7 @@
       font-size: 18px;
       line-height: 32px;
       color: #5C3971;
-      max-width: 430px;
+      width: 430px;
       margin: 0 46px 0 0;
       position: relative;
 
@@ -132,99 +172,138 @@
       border-radius: 0;
       border: none;
       border-bottom: 1px solid #44668b;
-      max-width: 306px;
+      min-width: 306px;
       width: 100%;
-      outline:  none!important;
-    }
-
-    button {
-      background: #6B4184;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-      border-radius: 30px;
-      border: 0;
-      margin-left: 101px;
-      width: 372px;
-
-      .btn {
-        font-weight: 600;
-        font-size: 17px;
-        line-height: 23px;
-        text-align: center;
-        padding: 14px 45px;
-        color: #FFFFFF;
-      }
+      outline: none !important;
     }
   }
 
   ////media
 
+  @media (max-width: 1329px) {
+    form .icon-arrow-long {
+      display: none;
+    }
+  }
+
+  @media (max-width: 915px) {
+    .social-icons {
+      display: none;
+    }
+  }
+
   @media (max-width: 991px) {
+
     .caption {
       font-size: 40px;
+      line-height: 48px;
     }
 
     .sub-caption {
-      font-size: 30px;
+      line-height: 136.68%;
+    }
+
+    form {
+      flex-direction: column;
+      align-items: baseline;
+
+      p {
+        width: 100%;
+        margin: 0 0 20px;
+      }
     }
   }
 
-  @media (max-width: 630px) {
-    .item .circle {
-      height: 75px;
-      width: 75px;
-    }
+  @media (max-width: 755px) {
 
-    .item .circle .icon-door, .item .circle .icon-truck, .item .circle .icon-contract {
-      font-size: 40px;
-    }
-
-    .item .text {
-      max-width: 160px;
-      line-height: 140.5%;
+    form {
+      input {
+        min-width: 130px;
+        width: 100%;
+      }
     }
   }
 
-  @media (max-width: 575px) {
+  @media (max-width: 665px) {
+    form {
+      align-items: center;
 
-    .captions {
-      margin-top: 20px;
+      p {
+        text-align: center;
+      }
+
+      .inputs {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.35);
+        border-radius: 50px;
+        padding: 0 28px 14px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        input {
+          padding: 10px 15px 12px 15px;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #6B4184;
+          background: transparent;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid #44668b;
+          min-width: 264px;
+          width: 100%;
+          outline: none !important;
+        }
+      }
+
+      .inputs button {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+        margin: auto;
+      }
     }
+  }
+
+
+  @media (max-width: 460px) {
+    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 11.02%, rgba(255, 255, 255, 0) 69.02%), url("../../public/images/banner-mob.png") top left no-repeat;
+    background-size: 100% 100%;
 
     .caption {
-      font-size: 25px;
-    }
-
-    .order {
-      margin-bottom: 5px;
-    }
-
-    .circles-holder {
-      margin-bottom: 10px;
-    }
-
-    .banner-inner {
-      justify-content: space-between;
+      font-size: 28px;
+      line-height: 151.18%;
     }
 
     .sub-caption {
-      font-size: 18px;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 186.68%;
+      color: rgba(17, 5, 52, 0.6);
     }
 
-    .item .circle {
-      margin-right: 10px;
-      margin-left: 10px;
-    }
+    form {
+      p {
+        font-size: 13px;
+        line-height: 180.18%;
+      }
 
-    .item .text {
-      margin-top: 8px;
+      .mobile {
+        margin: auto;
+      }
     }
+  }
 
-    .order p {
-      font-size: 15px;
-    }
-
-    .order .btn {
-      font-size: 12px;
+  @media (max-width: 340px) {
+    form {
+      .inputs input {
+        min-width: 198px;
+      }
     }
   }
 
