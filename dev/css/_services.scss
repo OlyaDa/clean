@@ -172,6 +172,15 @@
           outline: none !important;
         }
 
+        &:hover {
+          transition: .2s;
+          border: 1px solid #6B4184;
+          background: #fff;
+          .btn {
+            color: #6B4184;
+          }
+        }
+
         .btn:visited, .btn:focus, .btn:active, .btn:hover, .btn:focus-within {
           outline: none !important;
         }

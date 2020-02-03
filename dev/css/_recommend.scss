@@ -119,7 +119,7 @@
   .video {
     position: relative;
     margin-left: -125px;
-    margin-right: -180px;
+    margin-right: -150px;
     margin-top: 70px;
     z-index: 1;
   }
@@ -372,8 +372,45 @@
   @media (max-width: 500px) {
     padding-top: 0;
 
+    .image-clean {
+      width: 90%;
+      margin-bottom: 30px;
+
+      img {
+        box-shadow: none;
+      }
+    }
+
+    .clean {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .before, .after {
       font-size: 15px;
+
+      &:before {
+        left: -24px;
+      }
+    }
+
+    .before {
+      right: 0;
+      margin: auto;
+      width: 76px;
+      &:before {
+        left: -24px;
+      }
+    }
+
+    .after {
+      right: 0;
+      margin: auto;
+      width: 101px;
+      &:before {
+        left: -10px;
+      }
     }
 
     .clean {

@@ -1,259 +1,342 @@
-//////////////////////////FOOTER BEGIN////////////////////////
-$font_text: 'Montserrat', sans-serif;
-
 .footer {
-  padding: 80px 0 40px 0;
-  position: relative;
-  background-color: #f5f5f5;
+  background: url("../../public/images/bg-footer.png") top left no-repeat;
+  background-size: 100% 100%;
+  padding-top: 100px;
+  padding-bottom: 34px;
 
-  .caption {
-    margin-top: 0;
-    margin-bottom: 40px;
-    font-weight: 700;
-    font-family: $font_text;
-    text-transform: uppercase;
-    font-size: 30px;
-    letter-spacing: -.02em;
-    color: #000;
-    text-align: center;
+  ///accordion
+  .panel-group {
+    margin-top: 32px;
+    width: 100%;
   }
 
-  .contact {
+  .panel {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    background: linear-gradient(90deg, #87629D 0%, #6B4184 100%);
+  }
+
+  .panel-default > .panel-heading {
+    padding: 0;
+    border: none;
+  }
+
+  .panel-body {
+    padding: 0 17px 25px 27px;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    max-width: 385px;
+  }
+
+  .panel-collapse {
+    //padding: 0 17px 25px 27px;
+    margin-top: -25px;
+    margin-bottom: 25px;
+  }
+
+  .panel-title {
+    margin-bottom: 25px;
+  }
+
+  .panel-title > a {
+    //display: block;
+    padding: 11px 27px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
 
-    .phone {
-      display: block;
+  .more-less {
+    float: right;
+    color: #212121;
+  }
+
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+  }
+
+  .triangle-bottom {
+    border-style: solid;
+    border-width: 14px 7px 0 7px;
+    border-color: #FFFFFF transparent transparent transparent;
+  }
+
+  .triangle-top {
+    border-style: solid;
+    border-width: 0 7px 14px 7px;
+    border-color: transparent transparent #FFFFFF transparent;
+  }
+/////////
+
+  h6 {
+    margin-top: 85px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+  }
+
+  .line {
+    height: 1px;
+    width: 100%;
+    background: #fff;
+  }
+
+  .phone, .address, .email {
+    display: flex;
+    align-items: center;
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .phone .circle-big {
+    margin: 19px 23px 14px 0;
+  }
+
+  .address .circle-big {
+    margin-bottom: 14px;
+  }
+
+  .email .circle-big {
+    margin-bottom: 20px;
+  }
+
+  .tel, .adres, .mail {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .circle-big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(156, 132, 192, 0.2) 1.35%, rgba(102, 246, 255, 0.2) 100%);
+    margin-right: 23px;
+  }
+
+  .circle-small {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #7E5895 0%, #6B4184 100%);
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon-phone, .fa-map-marker-alt, .icon-mail {
+      font-size: 20px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    a:hover {
+      text-decoration: none;
     }
 
-    .middle {
-      margin: 20px 0;
+    .circle-big {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 69px;
+      height: 69px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, rgba(156, 132, 192, 0.2) 1.35%, rgba(102, 246, 255, 0.2) 100%);
+      margin: 0;
+      margin-top: 16px;
     }
 
-    .contact-title {
-      font-family: "Lato", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 151.5%;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 5px;
-      color: #c4956a;
-    }
+    .circle-small {
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, #7E5895 0%, #6B4184 100%);
+      border: 1px solid #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    .contact-text, .contact-text a {
-      font-family: $font_text;
-      font-size: 14px;
-      line-height: 1.6;
-      font-weight: 400;
-      letter-spacing: -.02em;
-      color: rgba(0, 0, 0, 0.7);
-      margin-bottom: 0;
-    }
+      .icon-facebook {
+        font-size: 22px;
+      }
 
-    .contact-text a {
-      &:hover {
-        text-decoration: none;
+      .icon-jam-instagram {
+        font-size: 30px;
+      }
+
+      .icon-youtube {
+        font-size: 24px;
       }
     }
   }
 
   form {
-    display: inline-block;
-    background: #fff;
-    padding: 40px 40px 40px 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 50px;
+    padding: 85px 50px 45px 50px;
+    text-align: center;
+    z-index: 2;
 
     .form-title {
-      font-weight: 700;
-      font-family: $font_text;
-      letter-spacing: -.02em;
-      color: #000;
+      font-weight: 800;
       font-size: 20px;
-      margin-bottom: 20px;
+      line-height: 27px;
       text-align: center;
+      color: #5C3971;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #311C53;
     }
 
     input {
-      display: block;
+      padding: 7px 5px;
       width: 100%;
-      min-height: 42px;
-      padding: 9px 0;
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 24px;
-      letter-spacing: -.02em;
-      border-radius: 0;
+      display: block;
       border: none;
-      border-bottom: 1px solid #08203E;
-      font-family: $font_text;
-      font-style: normal;
+      border-bottom: 1px solid #7E5895;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #5C3971;
       background: transparent;
-      outline: none;
-      color: #000;
+      margin-bottom: 35px;
     }
 
     input[type="text"] {
-      margin-bottom:20px;
-    }
-
-    input[type="tel"] {
-      margin-bottom: 40px;
+      margin-bottom:24px;
     }
 
     input:focus {
-      outline: none;
+      outline: none !important;
     }
 
-    input::-webkit-input-placeholder { color: #000; }
-    input::-ms-input-placeholder { color: #000; }
-    input::-ms-input-placeholder { color: #000; }
-    input::placeholder { color: #000; }
-  }
-
-  button {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 13px;
-    line-height: 1.5;
-    border: 1px solid #c4956a;
-    font-family: $font_text;
-    font-weight: 700;
-    letter-spacing: -.02em;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #c4956a;
-    color: #FFFFFF;
-    border-radius: 0;
-    &:hover {
-      background-color: transparent;
-      color: #c4956a;
+    input::-webkit-input-placeholder {
+      color: #5C3971;
     }
-  }
+    input::-ms-input-placeholder {
+      color: #5C3971;
+    }
+    input::-ms-input-placeholder {
+      color: #5C3971;
+    }
+    input::placeholder {
+      color: #5C3971;
+    }
 
-  .footer-bottom {
-    margin-top: 40px;
-
-    .social {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      a {
-        &:hover {
-          text-decoration: none;
+    button {
+      background: #6B4184;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      border-radius: 30px;
+      margin-top: 20px;
+      border: 1px solid #6B4184;
+      .btn {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 13px 43px;
+      }
+      &:hover {
+        transition: .2s;
+        background: #fff;
+        .btn {
+          color: #6B4184;
         }
       }
     }
-
-    .icon-facebook, .icon-inst {
-      font-size: 45px;
-    }
-
-    .icon-youtube {
-      font-size: 50px;
-    }
-
-    .logo {
-      max-width: 100px;
-      max-height: 50px;
-      margin-right: 0;
-    }
-
-    .logo-info {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-    }
   }
 
-  ///media
+  //media
+
+  @media (max-width: 1125px) {
+  form {
+    padding: 85px 20px 45px 20px;
+  }
+}
 
   @media (max-width: 991px) {
-    .contact {
+    background: url("../../public/images/bg-footer-mob.png") top left no-repeat;
+    background-size: cover;
+
+    form {
+      padding: 85px 50px 45px 50px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding-top: 30px;
+
+    h6 {
+      margin-top: 20px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      margin-bottom: 40px;
+    }
 
-      .contact-block {
-        display: flex;
-        width: 30%;
-        justify-content: space-between;
-      }
+    .phone, .address, .email {
+      width: 300px;
+      margin: auto;
+    }
+
+    .social-icons {
+      width: 300px;
+      margin-bottom: 0;
+    }
+
+    .panel-group {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     form {
-      display: block;
-      width: 50%;
-      margin: 40px auto 0 auto;
-      text-align: center;
-    }
-
-    .footer-bottom .social {
-      justify-content: space-evenly;
-      margin-bottom: 40px;
-    }
-
-    .footer-bottom .logo-info {
-      justify-content: space-evenly;
-    }
-
-  }
-
-  @media (max-width: 768px) {
-    padding: 40px 0 20px 0;
-
-    .caption {
-      margin-bottom: 20px;
-      font-size: 20px;
-    }
-
-    .contact {
-      margin-bottom: 20px;
-
-      .contact-block {
-        width: 40%;
-      }
-    }
-
-    form {
-      width: 80%;
-      margin: 20px auto 0 auto;
-    }
-
-    .footer-bottom .social {
-      margin-bottom: 20px;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
-  @media (max-width: 768px) {
-
-    .caption {
-      font-size: 18px;
-    }
-
-    .contact {
-      .contact-block {
-        width: 50%;
-      }
-    }
+  @media (max-width: 500px) {
 
     form {
+      padding: 85px 20px 45px 20px;
+    }
+    .panel-group, form {
       width: 100%;
     }
   }
 
-
-  @media (max-width: 480px) {
-    .contact {
-      .contact-block {
-        width: 80%;
-      }
-    }
-  }
 }
-
-//////////////////////////FOOTER END////////////////////////

@@ -100,6 +100,7 @@
     cursor: pointer;
     color: #fff;
     outline: none !important;
+    border: 1px solid #6B4184;
     background: #6B4184;
     z-index: 1;
   }
@@ -208,7 +209,7 @@
     .caption {
       margin-bottom: 20px;
       font-size: 24px;
-      line-height: 40px;
+      line-height: 24px;
     }
     p {
       margin-bottom: 20px;

@@ -47,19 +47,27 @@
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     outline: none !important;
-    border: none;
     max-width: 178px;
     width: 100%;
+    border: 1px solid #6B4184;
 
     .btn {
       border: none;
       font-weight: 600;
       font-size: 14px;
       line-height: 19px;
-      padding: 10px 30px;
+      padding: 9px 29px;
       text-align: center;
       color: #FFFFFF;
       outline: none !important;
+    }
+
+    &:hover {
+      transition: .2s;
+      background: #fff;
+      .btn {
+        color: #6B4184;
+      }
     }
   }
   .btn:visited, .btn:focus, .btn:active, .btn:hover, .btn:focus-within {

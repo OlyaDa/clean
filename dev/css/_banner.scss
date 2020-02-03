@@ -95,7 +95,7 @@
         background: #6B4184;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
         border-radius: 30px;
-        border: 0;
+        border: 1px solid #6B4184;
         margin-left: 101px;
         min-width: 249px;
         width: 100%;
@@ -105,8 +105,16 @@
           font-size: 17px;
           line-height: 23px;
           text-align: center;
-          padding: 14px 45px;
+          padding: 13px 44px;
           color: #FFFFFF;
+        }
+
+        &:hover {
+          transition: .2s;
+          background: #fff;
+          .btn {
+            color: #6B4184;
+          }
         }
       }
     }

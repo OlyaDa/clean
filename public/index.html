@@ -17,7 +17,6 @@
 
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -35,7 +34,7 @@
             <div class="header__inner">
                 <div class="top">
                     <div class="logo">
-                        <a href="#">
+                        <a href="/">
                             <img class="logo" src="images/logo.png" alt="logo">
                         </a>
                     </div>
@@ -47,7 +46,7 @@
 
                 <nav class="main-nav">
                     <ul class=" menu list-reset">
-                        <li><a href="#" class="nav-link-new">О нас</a></li>
+                        <li><a href="#about" class="nav-link-new">О нас</a></li>
                         <li>
                             <div class="dropdown">
                                 <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -62,7 +61,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" class="nav-link-new">Отзывы</a></li>
+                        <li><a href="#reviews" class="nav-link-new">Отзывы</a></li>
                         <li>
                             <div class="button">
                                 <a href="#popup" class="btn popup-link">
@@ -156,11 +155,13 @@
                     <div class="inputs">
                         <input placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>
                         <input name="order" type="hidden" value="Оставьте свой номер и получите убранную квартиру">
+
                         <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
                         <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
                         <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
                         <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
                         <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
                         <button class="disbutt" disabled>
                             <span class="btn">Заказать звонок</span>
                         </button>
@@ -182,7 +183,7 @@
 
         <!--.......................WHY.......................-->
 
-        <section class="why">
+        <section class="why" id="about">
             <div class="container">
 
                 <div class="row">
@@ -395,7 +396,7 @@
 
         <!--.......................RECOMMEND.......................-->
 
-        <section class="recommend">
+        <section class="recommend" id="reviews">
             <div class="container">
                 <h2 class="caption">
                     НАС РЕКОМЕНДУЮТ
@@ -539,438 +540,283 @@
             </div>
         </section>
 
-        <!--.......................USE OF OUR PRODUCTS.......................-->
+        <!--.......................APPEAL.......................-->
 
-        <!--<section class="use">-->
-        <!--<div class="container">-->
-        <!--<h4 class="caption">-->
-        <!--ПРЕИМУЩЕСТВО ИСПОЛЬЗОВАНИЯ НАШЕЙ ПРОДУКЦИИ-->
-        <!--</h4>-->
-        <!--<div class="row d-flex align-items-center">-->
-        <!--<div class="col-lg-6">-->
+        <section class="appeal">
+            <div class="container">
+                <h4 class="caption">
+                    обращение к клиентам
+                </h4>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="left-part">
+                            <div class="image-grad">
+                                <img src="images/gradient3.png" alt="gradient">
+                            </div>
 
-        <!--&lt;!&ndash;Nav tabs&ndash;&gt;-->
+                            <p class="item-first">1. В своём стремлении повысить качество жизни, они забывают, что
+                                дальнейшее развитие различных форм деятельности не даёт нам иного выбора</p>
 
-        <!--<nav>-->
-        <!--<div class="nav nav-tabs" id="nav-tab" role="tablist">-->
-        <!--<a class="nav-item nav-link active" id="nav-mortgage-tab" data-toggle="tab" href="#nav-mortgage" role="tab" aria-controls="nav-mortgage" aria-selected="true">-->
-        <!--<div class="item">-->
-        <!--<span class="icon-mortgage-1"></span>-->
-        <!--<p>ЭКОНОМИЯ СВОБОДНОГО ПРОСТРАНСТВА</p>-->
-        <!--</div>-->
-        <!--</a>-->
-        <!--<a class="nav-item nav-link" id="nav-reliability-tab" data-toggle="tab" href="#nav-reliability" role="tab" aria-controls="nav-reliability" aria-selected="false">-->
-        <!--<div class="item">-->
-        <!--<span class="icon-reliability"></span>-->
-        <!--<p>НАДЁЖНОСТЬ И ФУНКЦИОНАЛЬНОСТЬ КОНСТРУКЦИИ</p>-->
-        <!--</div>-->
-        <!--</a>-->
-        <!--<a class="nav-item nav-link" id="nav-blueprint-tab" data-toggle="tab" href="#nav-blueprint" role="tab" aria-controls="nav-blueprint" aria-selected="false">-->
-        <!--<div class="item">-->
-        <!--<span class="icon-blueprint"></span>-->
-        <!--<p>ПРОСТОЕ ЗОНИРОВАНИЕ ПОМЕЩЕНИЯ</p>-->
-        <!--</div>-->
-        <!--</a>-->
-        <!--<a class="nav-item nav-link" id="nav-check-in-tab" data-toggle="tab" href="#nav-check-in" role="tab" aria-controls="nav-check-in" aria-selected="false">-->
-        <!--<div class="item">-->
-        <!--<span class="icon-check-in"></span>-->
-        <!--<p>ДЛИТЕЛЬНЫЙ СРОК ЭКСПЛУАТАЦИИ</p>-->
-        <!--</div>-->
-        <!--</a>-->
-        <!--</div>-->
-        <!--</nav>-->
+                            <p>2. Но независимые государства лишь добавляют фракционных разногласий и ассоциативно
+                                распределены по отраслям.</p>
+                        </div>
+                    </div>
 
-        <!--</div>-->
-        <!--<div class="col-lg-6">-->
+                    <div class="col-lg-5">
+                        <div class="video">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                 <span class="circle">
+                                    <span class="icon-play"></span>
+                                </span>
+                            </a>
+                            <div class="image-video">
+                                <img src="images/video3.png" alt="">
+                            </div>
 
-        <!--&lt;!&ndash; Tab panes &ndash;&gt;-->
+                            <div class="info">
+                                <p class="name">Иванов Иван Иванович</p>
+                                <p class="status">Генеральный директор “SOLIDCARE”</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <!--<div class="tab-content" id="nav-tabContent">-->
-        <!--<div class="tab-pane fade show active" id="nav-mortgage" role="tabpanel" aria-labelledby="nav-mortgage-tab">-->
-        <!--<div class="image-holder">-->
-        <!--<div class="image-big">-->
-        <!--<img src="images/caset1.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="small">-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset2.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small middle">-->
-        <!--<img src="images/caset3.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset4.png" alt="">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="nav-reliability" role="tabpanel" aria-labelledby="nav-reliability-tab">-->
-        <!--<div class="image-holder">-->
-        <!--<div class="image-big">-->
-        <!--<img src="images/caset2.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="small">-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset3.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small middle">-->
-        <!--<img src="images/caset4.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset1.png" alt="">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="nav-blueprint" role="tabpanel" aria-labelledby="nav-blueprint-tab">-->
-        <!--<div class="image-holder">-->
-        <!--<div class="image-big">-->
-        <!--<img src="images/caset3.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="small">-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset4.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small middle">-->
-        <!--<img src="images/caset1.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset2.png" alt="">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="tab-pane fade" id="nav-check-in" role="tabpanel" aria-labelledby="nav-check-in-tab">-->
-        <!--<div class="image-holder">-->
-        <!--<div class="image-big">-->
-        <!--<img src="images/caset4.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="small">-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset1.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small middle">-->
-        <!--<img src="images/caset2.png" alt="">-->
-        <!--</div>-->
-        <!--<div class="image-small">-->
-        <!--<img src="images/caset3.png" alt="">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</section>-->
+                    <div class="col-lg-4">
+                        <div class="right-part">
+                            <div class="image-grad">
+                                <img src="images/gradient4.png" alt="gradient">
+                            </div>
 
-        <!--.......................COOPERATION.......................-->
+                            <p class="item-third">3. В своём стремлении повысить качество жизни, они забывают, что
+                                дальнейшее развитие различных форм деятельности не даёт нам иного выбора</p>
 
-        <!--<section class="cooperation">-->
-        <!--<div class="container">-->
-        <!--<div class="row">-->
-        <!--<div class="col-lg-5">-->
-        <!--<p class="title">-->
-        <!--ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ-->
-        <!--<p>-->
-        <!--<p class="text">-->
-        <!--Наша компания приглашает к сотрудничеству aрхитекторов, дизайнеров, прорабов-->
-        <!--</p>-->
-        <!--</div>-->
-
-        <!--<div class="col-lg-7">-->
-        <!--<form class="order-main">-->
-        <!--<h4 class="form-title">-->
-        <!--<span id="customTextForm2">-->
-        <!--<span class="block">Заполните форму и получите</span> коммерческое предложение в течении 1 часа-->
-        <!--</span>-->
-        <!--</h4>-->
-        <!--<input placeholder="Имя" type="text" name="name" required>-->
-        <!--<input id="phone" placeholder="Телефон" type="tel" name="phone"-->
-        <!--class="phoneidcl" required>-->
-        <!--<input name="order" type="hidden" value="Заполните форму и получите коммерческое предложение">-->
-        <!--<button class="disbutt" disabled>-->
-        <!--<span>Получить предложение</span>-->
-        <!--</button>-->
-        <!--</form>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</section>-->
-
-        <!--.......................GALLERY.......................-->
-
-        <!--<section class="gallery" id="gallery">-->
-        <!--<div class="container">-->
-        <!--<h4 class="caption">-->
-        <!--ГАЛЕРЕЯ ВЫПОЛНЕННЫХ РАБОТ-->
-        <!--</h4>-->
-
-        <!--<div class="row popup-gallery">-->
-        <!--<div class="col-lg-4 col-6">-->
-        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
-        <!--</div>-->
-
-        <!--<div class="col-lg-4 col-6">-->
-        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
-        <!--</div>-->
-
-        <!--<div class="col-lg-4 col-6">-->
-        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
-        <!--</div>-->
-
-        <!--<div class="col-lg-4 col-6">-->
-        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
-        <!--</div>-->
-
-        <!--<div class="col-lg-4 col-6">-->
-        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
-        <!--</div>-->
-
-        <!--<div class="col-lg-4 col-6">-->
-        <!--<a href="images/gallery.jpg" title="door"><img src="images/gallery.jpg" alt="двери"></a>-->
-        <!--</div>-->
-
-        <!--</div>-->
-        <!--</div>-->
-        <!--</section>-->
-
-        <!--.......................REVIEWS.......................-->
-
-        <!--<section class="reviews">-->
-        <!--<div class="container">-->
-
-        <!--<h4 class="caption">-->
-        <!--ОТЗЫВЫ НАШИХ КЛИЕНТОВ-->
-        <!--</h4>-->
-
-        <!--<div class="reviews-slider">-->
-
-        <!--<div class="reviews-body">-->
-        <!--<div class="reviews-title">-->
-        <!--<div class="image">-->
-        <!--<img src="images/foto1.png" alt="клиент">-->
-        <!--</div>-->
-        <!--<div class="title">-->
-        <!--<p class="name">Балицкий Александр</p>-->
-        <!--<p class="town">Киев</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<p class="reviews-text">-->
-        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
-        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
-        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
-        <!--</p>-->
-        <!--</div>-->
-
-        <!--<div class="reviews-body">-->
-        <!--<div class="reviews-title">-->
-        <!--<div class="image">-->
-        <!--<img src="images/foto2.png" alt="клиент">-->
-        <!--</div>-->
-        <!--<div class="title">-->
-        <!--<p class="name">Бондар Виталия</p>-->
-        <!--<p class="town">Днепр</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<p class="reviews-text">-->
-        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
-        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
-        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
-        <!--</p>-->
-        <!--</div>-->
-
-        <!--<div class="reviews-body">-->
-        <!--<div class="reviews-title">-->
-        <!--<div class="image">-->
-        <!--<img src="images/foto3.png" alt="клиент">-->
-        <!--</div>-->
-        <!--<div class="title">-->
-        <!--<p class="name">Король Юрий</p>-->
-        <!--<p class="town">Киев</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<p class="reviews-text">-->
-        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
-        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
-        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
-        <!--</p>-->
-        <!--</div>-->
-
-        <!--<div class="reviews-body">-->
-        <!--<div class="reviews-title">-->
-        <!--<div class="image">-->
-        <!--<img src="images/foto1.png" alt="клиент">-->
-        <!--</div>-->
-        <!--<div class="title">-->
-        <!--<p class="name">Балицкий Александр</p>-->
-        <!--<p class="town">Киев</p>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<p class="reviews-text">-->
-        <!--Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую-->
-        <!--востребованность глубокомысленных рассуждений. А также базовые сценарии поведения-->
-        <!--пользователей, которые представляют собой яркий пример континентально-европейского-->
-        <!--</p>-->
-        <!--</div>-->
-
-        <!--</div>-->
-        <!--</div>-->
-        <!--</section>-->
-
-        <!--.......................CERTIFICATES.......................-->
-
-        <!--<section class="certificates">-->
-        <!--<div class="container">-->
-        <!--<h4 class="caption">-->
-        <!--СЕРТИФИКАТЫ-->
-        <!--</h4>-->
-        <!--<div class="gallery-slider">-->
-        <!--<div class="certificates-slider">-->
-        <!--<div class="gallery-image">-->
-        <!--<img src="images/certificate.png" alt="сертификат">-->
-        <!--</div>-->
-
-        <!--<div class="gallery-image">-->
-        <!--<img src="images/certificate.png" alt="сертификат">-->
-        <!--</div>-->
-
-        <!--<div class="gallery-image">-->
-        <!--<img src="images/certificate.png" alt="сертификат">-->
-        <!--</div>-->
-
-        <!--<div class="gallery-image">-->
-        <!--<img src="images/certificate.png" alt="сертификат">-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--</div>-->
-        <!--</section>-->
+                            <p>4. Но независимые государства лишь добавляют фракционных разногласий и ассоциативно
+                                распределены по отраслям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--.......................FOOTER.......................-->
 
-    <!--<footer class="footer" id="contact">-->
-    <!--<div class="container">-->
-    <!--<h4 class="caption">-->
-    <!--КОНТАКТЫ-->
-    <!--</h4>-->
-    <!--<div class="row d-flex align-items-center">-->
-    <!--<div class="col-lg-2">-->
-    <!--<div class="contact">-->
-    <!--<div class="contact-block">-->
-    <!--<p class="contact-title">-->
-    <!--Телефоны:-->
-    <!--</p>-->
-    <!--<p class="contact-text">-->
-    <!--<a href="tel:+380638442311" class="phone">+380 63 844 23 11 </a>-->
-    <!--<a href="tel:+380668443211" class="phone">+380 66 844 32 11 </a>-->
-    <!--</p>-->
-    <!--</div>-->
-    <!--<div class="contact-block middle">-->
-    <!--<p class="contact-title">-->
-    <!--Почта:-->
-    <!--</p>-->
-    <!--<p class="contact-text">-->
-    <!--<a href="mailto:iap@info.com.ua"-->
-    <!--class="phone">iap@info.com.ua</a>-->
-    <!--</p>-->
-    <!--</div>-->
-    <!--<div class="contact-block">-->
-    <!--<p class="contact-title">-->
-    <!--Адрес:-->
-    <!--</p>-->
-    <!--<p class="contact-text">-->
-    <!--Киев, Банковская 65а-->
-    <!--</p>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center d-flex">
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="caption">
+                        Контактные данные
+                    </h6>
 
-    <!--<div class="col-lg-6">-->
-    <!--<div class="map">-->
-    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5335.057346303622!2d30.485790767551773!3d50.45964072690475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x40d4ce7976bee27b%3A0x1d3e315c9ebba01c!2z0JvRg9C6J9GP0L3RltCy0YHRjNC60LA!3m2!1d50.461178999999994!2d30.483670999999998!4m5!1s0x40d4ce65bb637e0d%3A0x15a04ce32f6333ef!2z0JHQtdGF0YLQtdGA0LXQstGB0LrQuNC5INC_0LXRgC4sIDE00JUsINCa0LjQtdCyLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwMjAwMA!3m2!1d50.459371499999996!2d30.4965899!5e0!3m2!1sru!2sua!4v1574811075804!5m2!1sru!2sua"-->
-    <!--width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="col-lg-4">-->
-    <!--<form class="order-main">-->
-    <!--<h4 class="form-title">-->
-    <!--<span id="customTextForm3">-->
-    <!--Остались вопросы?-->
-    <!--</span>-->
-    <!--</h4>-->
-    <!--<input placeholder="Имя" type="text" name="name" required>-->
-    <!--<input placeholder="Телефон" type="tel" name="phone"-->
-    <!--class="phoneidcl" required>-->
-    <!--<input name="order" type="hidden" value="Остались вопросы?">-->
-    <!--<button class="disbutt" disabled>-->
-    <!--<span>Заказать звонок</span>-->
-    <!--</button>-->
-    <!--</form>-->
-    <!--</div>-->
-    <!--</div>-->
+                    <div class="line"></div>
 
-    <!--<div class="footer-bottom">-->
-    <!--<div class="row">-->
-    <!--<div class="col-lg-4">-->
-    <!--<div class="social">-->
-    <!--<a href="#"><span class="icon-facebook"></span></a>-->
-    <!--<a href="#"> <span class="icon-inst"></span></a>-->
-    <!--<a href="#"><span class="icon-youtube"></span></a>-->
-    <!--</div>-->
-    <!--</div>-->
+                    <div class="info">
+                        <div class="phone">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-phone"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="tel:+380546576565" class="tel">+38 (054) 657 65 65</a>
+                        </div>
 
-    <!--<div class="offset-lg-2 col-lg-6">-->
-    <!--<div class="logo-info">-->
-    <!--<div class="logo">-->
-    <!--<a href="#">-->
-    <!--<img class="logo" src="images/logo.png" alt="logo">-->
-    <!--</a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</footer>-->
-    <!--<div class="devgen p-1 text-center">-->
-    <!--<a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by GenerationLeadStudio</a>-->
-    <!--</div>-->
+                        <div class="address">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="adres">Киев, Банковая 45а</a>
+                        </div>
+
+                        <div class="email">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-email"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="mailto:solidcare_info@gmail.com" class="mail"></span>
+                                solidcare_info@gmail.com</a>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="social-icons">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-facebook"></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-jam-instagram"></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-youtube"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="caption">
+                        Часто задаваемы вопросы
+                    </h6>
+
+                    <div class="line"></div>
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        За сколько дней нужно оставить заявку?
+                                        <span class="triangle triangle-bottom"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Время, затрачиваемое на профессиональный клининг, зависит от нескольких
+                                    факторов: степени и типа загрязнений (выведение трудных пятен требует усилий),
+                                    особенностей помещения (высокие или витражные окна мыть дольше) и т. д. В
+                                    среднем на генеральную уборку квартиры уходит 5–8 часов, в зависимости от ее
+                                    площади, количества комнат. Более сложные виды клининга потребуют больше
+                                    времени.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                       data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                       aria-controls="collapseTwo">
+                                        Нужно ли предоставлять вашим клинерам
+                                        инструменты, моющие средства?
+                                        <span class="triangle triangle-bottom"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Время, затрачиваемое на профессиональный клининг, зависит от нескольких
+                                    факторов: степени и типа загрязнений (выведение трудных пятен требует усилий),
+                                    особенностей помещения (высокие или витражные окна мыть дольше) и т. д. В
+                                    среднем на генеральную уборку квартиры уходит 5–8 часов, в зависимости от ее
+                                    площади, количества комнат. Более сложные виды клининга потребуют больше
+                                    времени.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                       data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                       aria-controls="collapseThree">
+                                        Нужно ли предоставлять вашим клинерам
+                                        инструменты, моющие средства?
+                                        <span class="triangle triangle-bottom"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Время, затрачиваемое на профессиональный клининг, зависит от нескольких
+                                    факторов: степени и типа загрязнений (выведение трудных пятен требует усилий),
+                                    особенностей помещения (высокие или витражные окна мыть дольше) и т. д. В
+                                    среднем на генеральную уборку квартиры уходит 5–8 часов, в зависимости от ее
+                                    площади, количества комнат. Более сложные виды клининга потребуют больше
+                                    времени.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- panel-group -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <form class="order-main">
+                        <h4 class="form-title"> У вас остались вопросы?</h4>
+                        <p>Заполните форму и получите БЕСПЛАТНУЮ консультацию специалиста</p>
+
+                        <input placeholder="ИМЯ" type="text" name="name" required>
+                        <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+                        <input placeholder="ВОПРОС" type="text" name="question" required>
+                        <input name="order" type="hidden" value="У вас остались вопросы?">
+
+                        <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                        <button class="disbutt" disabled>
+                            <span class="btn">Заказать звонок </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="devgen p-1 text-center">
+    <a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by
+    GenerationLeadStudio</a>
+    </div>
 </div>
 
 <!--/////pop-up//////-->
 
-<!--<div id="popup" class="mfp-hide popup">-->
-<!--<div class="container">-->
+<div id="popup" class="mfp-hide popup">
+    <div class="container">
 
-<!--<div class="logo">-->
-<!--<a href="#">-->
-<!--<img class="logo" src="images/logo.png" alt="logo">-->
-<!--</a>-->
-<!--</div>-->
+        <form class="order-main">
+            <h4 class="form-title"> <span id="customTextForm">У вас остались вопросы?</span> </h4>
+            <p>Заполните форму и получите БЕСПЛАТНУЮ консультацию специалиста</p>
 
-<!--<form class="order-main2">-->
-<!--<h4 class="form-title">-->
-<!--<span id="customTextForm4">-->
-<!--Заполните форму и с вами свяжется наш специалист в течении 15 минут для БЕСПЛАТНОЙ консультации-->
-<!--</span>-->
-<!--</h4>-->
-<!--<input placeholder="Имя" type="text" name="name" required>-->
-<!--<input placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>-->
-<!--<input name="order" type="hidden" id="input_order">-->
-<!--<button class="disbutt" disabled>-->
-<!--<span>Получить консультацию </span>-->
-<!--</button>-->
-<!--<p class="form-text">Подписывайтесь на наши социальные сети и будьте всегда в курсе новостей и новинок нашей компании</p>-->
-<!--<div class="social">-->
-<!--<a href="#"><span class="icon-facebook"></span></a>-->
-<!--<a href="#"> <span class="icon-inst"></span></a>-->
-<!--</div>-->
-<!--</form>-->
-<!--</div>-->
-<!--</div>-->
+            <input placeholder="ИМЯ" type="text" name="name" required>
+            <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+            <input placeholder="ВОПРОС" type="text" name="question" required>
+            <input name="order" type="hidden" value="У вас остались вопросы?">
+
+            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+            <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+            <button class="disbutt" disabled>
+                <span class="btn">Заказать звонок</span>
+            </button>
+        </form>
+    </div>
+</div>
 
 <!--pop-up end-->
 

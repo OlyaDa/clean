@@ -301,3 +301,16 @@ function swap(e) {
         }
     }
 }
+
+
+///accordion
+
+function toggleIcon(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find(".triangle")
+        .toggleClass('triangle-bottom triangle-top');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
+
