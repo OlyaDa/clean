@@ -235,6 +235,10 @@
   background: url("../../public/images/bg-general.png") top left no-repeat !important;
   background-size: 100% 100% !important; }
 
+.construction {
+  background: url("../../public/images/bg-construction.png") top left no-repeat !important;
+  background-size: 100% 100% !important; }
+
 .banner {
   position: relative;
   min-height: calc(100vh - 87px);
@@ -1906,7 +1910,7 @@
         right: calc(100% - 1px); }
   .clean-support .third-hallway {
     right: 19%;
-    bottom: 10%; }
+    bottom: 16%; }
   .clean-support .four-hallway {
     bottom: 2%;
     left: 8%; }
@@ -2170,6 +2174,159 @@
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         right: calc(100% - 1px); }
+  .clean-support .first-living-construction {
+    top: 4%;
+    left: 32%; }
+  .clean-support .second-living-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    top: 34%;
+    right: 22%; }
+    .clean-support .second-living-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .second-living-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-living-construction {
+    bottom: 40%;
+    left: 17%; }
+  .clean-support .four-living-construction {
+    bottom: 25%;
+    right: 8%; }
+  .clean-support .five-living-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    left: 27%;
+    bottom: 10%; }
+    .clean-support .five-living-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .five-living-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .first-bedroom-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    top: 15%;
+    left: 17%; }
+    .clean-support .first-bedroom-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .first-bedroom-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .second-bedroom-construction {
+    top: 37%;
+    right: 14%; }
+  .clean-support .third-bedroom-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    left: 8%;
+    bottom: 25%; }
+    .clean-support .third-bedroom-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .third-bedroom-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .four-bedroom-construction {
+    right: 23%;
+    bottom: 5%; }
+  .clean-support .first-hallway-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    top: 26%;
+    left: 7%; }
+    .clean-support .first-hallway-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .first-hallway-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .second-hallway-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    left: 33%;
+    bottom: 28%; }
+    .clean-support .second-hallway-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .second-hallway-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-hallway-construction {
+    bottom: 3%;
+    right: 12%; }
+  .clean-support .first-kitchen-construction {
+    top: 22%;
+    left: 21%; }
+  .clean-support .second-kitchen-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    left: 6%;
+    bottom: 36%; }
+    .clean-support .second-kitchen-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .second-kitchen-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-kitchen-construction {
+    bottom: 7%;
+    right: 31%; }
+  .clean-support .first-bathroom-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    left: 28%;
+    top: 28%; }
+    .clean-support .first-bathroom-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .first-bathroom-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .second-bathroom-construction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    left: 22%;
+    bottom: 36%; }
+    .clean-support .second-bathroom-construction .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .second-bathroom-construction .inner .trian {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-bathroom-construction {
+    bottom: 4%;
+    right: 35%; }
   .clean-support .left {
     z-index: 2; }
   @media (max-width: 1200px) {
@@ -2187,7 +2344,10 @@
       bottom: 6%; } }
   @media (max-width: 991px) {
     .clean-support {
-      margin-top: -90px; } }
+      margin-top: -90px; }
+      .clean-support .second-living-construction {
+        top: 27%;
+        right: 22%; } }
   @media (max-width: 860px) {
     .clean-support .holder {
       margin-right: -40px; }
@@ -2232,7 +2392,10 @@
       display: block; } }
   @media (max-width: 660px) {
     .clean-support {
-      margin-top: 200px; } }
+      margin-top: 200px; }
+      .clean-support .first-bathroom-construction {
+        left: 28%;
+        top: 20%; } }
   @media (max-width: 590px) {
     .clean-support .first-bedroom-general {
       left: 12%;
@@ -2246,10 +2409,6 @@
       top: 31%;
       right: 15%; }
     .clean-support .second-bathroom-general {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
       top: 31%;
       left: 6%; } }
   @media (max-width: 574px) {
