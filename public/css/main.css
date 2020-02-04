@@ -16,8 +16,8 @@
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    background: -webkit-gradient(linear, left top, right top, from(#7E5895), color-stop(54.17%, #FFFFFF));
-    background: linear-gradient(90deg, #7E5895 0%, #FFFFFF 54.17%);
+    background: -webkit-gradient(linear, left top, right top, from(#7E5895), color-stop(90%, #FFFFFF));
+    background: linear-gradient(90deg, #7E5895 0%, #FFFFFF 90%);
     -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
@@ -218,7 +218,9 @@
       display: block; } }
   @media (max-width: 460px) {
     .header {
-      top: 0; }
+      top: 5px;
+      left: 5px;
+      right: 5px; }
       .header .container {
         padding: 0 !important; }
       .header .logo {
@@ -256,10 +258,10 @@
     color: #5C3971;
     margin-bottom: 38px; }
   .banner .sub-caption {
-    font-weight: 300;
     font-size: 28px;
     line-height: 186.68%;
-    color: rgba(17, 5, 52, 0.8);
+    color: #110534;
+    font-weight: 600;
     max-width: 840px;
     margin: 0 0 35px; }
   .banner .social-icons {
@@ -477,16 +479,14 @@
         margin: auto; } }
   @media (max-width: 460px) {
     .banner {
-      background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 11.02%, rgba(255, 255, 255, 0) 69.02%), url("../../public/images/banner-mob.png") top left no-repeat;
-      background-size: 100% 100%; }
+      background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 11.02%, rgba(255, 255, 255, 0) 69.02%), url("../../public/images/banner-mob.png") top left no-repeat !important;
+      background-size: 100% 100% !important; }
       .banner .caption {
         font-size: 28px;
         line-height: 151.18%; }
       .banner .sub-caption {
-        font-weight: normal;
         font-size: 17px;
-        line-height: 186.68%;
-        color: rgba(17, 5, 52, 0.6); }
+        line-height: 186.68%; }
       .banner form p {
         font-size: 13px;
         line-height: 180.18%; }
@@ -1575,6 +1575,8 @@
     left: 23px;
     bottom: 28px;
     z-index: 2; }
+    .advantages p .conf-mob {
+      display: none; }
   @media (max-width: 1105px) {
     .advantages p {
       font-size: 15px;
@@ -1585,6 +1587,9 @@
       background-size: 100% 100%;
       padding-top: 90px;
       padding-bottom: 40px; }
+      .advantages p {
+        font-size: 18px;
+        left: 6px; }
       .advantages .caption {
         margin-bottom: 40px; }
       .advantages .images {
@@ -1603,21 +1608,27 @@
     .advantages .image-big, .advantages .image-small {
       margin-right: 9px;
       margin-left: 9px; } }
-  @media (max-width: 520px) {
+  @media (max-width: 535px) {
+    .advantages .overlay {
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(5.33%, #FFFFFF), color-stop(80.84%, rgba(255, 255, 255, 0)));
+      background: linear-gradient(360deg, #FFFFFF 5.33%, rgba(255, 255, 255, 0) 80.84%); }
     .advantages p {
       line-height: 128.68%;
-      bottom: 15px;
-      font-size: 14px; } }
-  @media (max-width: 474px) {
+      bottom: 15px; }
+      .advantages p .conf {
+        display: none; }
+      .advantages p .conf-mob {
+        display: inline-block; } }
+  @media (max-width: 455px) {
     .advantages p {
-      font-size: 12px;
-      bottom: 12px; } }
+      font-size: 17px; } }
   @media (max-width: 420px) {
     .advantages p {
-      font-size: 10px; } }
+      font-size: 14px; } }
   @media (max-width: 370px) {
     .advantages p {
-      font-size: 8px; } }
+      font-size: 12px;
+      left: 3px; } }
 
 .clean-support {
   margin-top: -168px;
@@ -1739,8 +1750,6 @@
     .clean-support ul li:last-child {
       border: none; }
   .clean-support .image {
-    max-width: 867px;
-    max-height: 454px;
     -webkit-box-shadow: 5px 4px 25px rgba(0, 0, 0, 0.5);
     box-shadow: 5px 4px 25px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -2024,59 +2033,61 @@
     .clean-support ul li a {
       padding: 15px 0; } }
   @media (max-width: 550px) {
-    .clean-support .item .inner {
-      margin-right: 0; }
-    .clean-support .panel-title > a {
-      padding: 15px 0; }
-    .clean-support .item .inner span {
-      font-size: 12px;
-      padding: 2px 7px 2px 14px; }
-    .clean-support .item .circle-small {
-      width: 15px;
-      height: 15px; }
     .clean-support .item {
-      left: 2%; }
-    .clean-support .first-living {
-      top: 2%; }
-    .clean-support .second-living {
-      bottom: 36%; }
-    .clean-support .first-bedroom {
-      right: 18%;
-      top: 2%; }
-    .clean-support .second-bedroom {
-      top: 32%; }
-    .clean-support .third-bedroom {
-      bottom: 18%; }
-    .clean-support .four-bedroom {
-      bottom: 0%; }
-    .clean-support .first-hallway {
-      top: 2%; }
-    .clean-support .third-hallway {
-      bottom: 24%; }
-    .clean-support .first-kitchen {
-      top: 2%; }
-    .clean-support .second-kitchen {
-      bottom: 44%; }
-    .clean-support .first-bathroom {
-      top: -3%; }
-    .clean-support .second-bathroom {
-      top: 18%; }
-    .clean-support .third-bathroom {
-      bottom: 28%; }
-    .clean-support .four-bathroom {
-      bottom: 1%; }
-    .clean-support .third-living .inner, .clean-support .four-bedroom .inner, .clean-support .second-hallway .inner, .clean-support .third-kitchen .inner, .clean-support .four-kitchen .inner, .clean-support .second-bathroom .inner, .clean-support .third-bathroom .inner {
-      margin-left: 0; } }
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 5px 0; }
+    .clean-support .item .inner {
+      margin-right: 0;
+      margin-left: 0; }
+    .clean-support .item .circle-small {
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background: -webkit-gradient(linear, left top, right top, from(#7E5895), to(#6B4184));
+      background: linear-gradient(90deg, #7E5895 0%, #6B4184 100%);
+      border: 1px solid #FFFFFF;
+      margin: 12px;
+      position: relative; }
+    @-webkit-keyframes pulse {
+      0% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+      70% {
+        top: -10px;
+        left: -10px;
+        bottom: -10px;
+        right: -10px; }
+      100% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; } }
+    @keyframes pulse {
+      0% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+      70% {
+        top: -10px;
+        left: -10px;
+        bottom: -10px;
+        right: -10px; }
+      100% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; } } }
   @media (max-width: 500px) {
     .clean-support {
       margin-top: 155px;
       margin-bottom: 0; } }
-  @media (max-width: 440px) {
-    .clean-support .item .inner span {
-      font-size: 10px; } }
-  @media (max-width: 350px) {
-    .clean-support .item .inner span {
-      font-size: 8px; } }
 
 .work {
   background: url("../../public/images/bg-why.png") top left no-repeat;
@@ -2282,6 +2293,8 @@
       line-height: 40px;
       font-size: 24px; } }
   @media (max-width: 660px) {
+    .work .slick-prev, .work .slick-next {
+      bottom: -7px; }
     .work .image-pos {
       min-width: 368px;
       max-height: 274px;
@@ -2305,17 +2318,51 @@
     .work .slick-next {
       left: 53%; }
     .work .before {
-      left: 0; }
+      left: 0;
+      right: 0;
+      width: 76px;
+      margin: auto; }
+      .work .before:before {
+        left: -24px; }
     .work .after {
       left: 0;
-      bottom: 285px; } }
+      bottom: 56%;
+      right: 0;
+      width: 101px;
+      margin: auto; }
+      .work .after:before {
+        left: -10px; } }
   @media (max-width: 500px) {
+    .work .after {
+      left: 0;
+      bottom: 48%;
+      right: 0;
+      width: 101px;
+      margin: auto; }
+      .work .after:before {
+        left: -10px; }
     .work .inner {
       height: 590px; }
     .work form {
       padding: 85px 20px 45px 20px;
       width: 100%; } }
   @media (max-width: 420px) {
+    .work .before {
+      left: 0;
+      right: 0;
+      width: 76px;
+      margin: auto;
+      top: -40px; }
+      .work .before:before {
+        left: -24px; }
+    .work .after {
+      left: 0;
+      bottom: 50%;
+      right: 0;
+      width: 101px;
+      margin: auto; }
+      .work .after:before {
+        left: -10px; }
     .work .image-rel {
       max-width: 100%;
       max-height: 100%;

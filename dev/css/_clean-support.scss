@@ -145,8 +145,8 @@
   }
 
   .image {
-    max-width: 867px;
-    max-height: 454px;
+    //max-width: 867px;
+    //max-height: 454px;
     box-shadow: 5px 4px 25px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     position: relative;
@@ -551,90 +551,158 @@
   }
 
   @media (max-width: 550px) {
+    .item {
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 5px 0;
+      //width: 81%;
+      //margin: auto;
+    }
     .item .inner {
       margin-right: 0;
-    }
-
-    .panel-title > a {
-      padding: 15px 0;
-    }
-
-    .item .inner span {
-      font-size: 12px;
-      padding: 2px 7px 2px 14px;
+      margin-left: 0;
     }
 
     .item .circle-small {
-      width: 15px;
-      height: 15px;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background: -webkit-gradient(linear, left top, right top, from(#7E5895), to(#6B4184));
+      background: linear-gradient(90deg, #7E5895 0%, #6B4184 100%);
+      border: 1px solid #FFFFFF;
+      margin: 12px;
+      position: relative;
     }
 
-    .item {
-      left: 2%;
-    }
 
-    .first-living {
-      top: 2%;
-    }
+    @-webkit-keyframes pulse {
+      0% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
 
-    .second-living {
-      bottom: 36%;
-    }
+      70% {
+        top: -10px;
+        left: -10px;
+        bottom: -10px;
+        right: -10px;
+      }
 
-    .first-bedroom {
-      right: 18%;
-      top: 2%;
-    }
-
-    .second-bedroom {
-      top: 32%;
-    }
-
-    .third-bedroom {
-      bottom: 18%;
-    }
-
-    .four-bedroom {
-      bottom: 0%;
-    }
-
-    .first-hallway {
-      top: 2%;
-    }
-
-    .third-hallway {
-      bottom: 24%;
-    }
-
-    .first-kitchen {
-      top: 2%;
-    }
-
-    .second-kitchen {
-      bottom: 44%;
-    }
-
-    .first-bathroom {
-      top: -3%;
-    }
-
-    .second-bathroom {
-      top: 18%;
-    }
-
-    .third-bathroom {
-      bottom: 28%;
-    }
-
-    .four-bathroom {
-      bottom: 1%;
-    }
-
-    .third-living, .four-bedroom, .second-hallway, .third-kitchen, .four-kitchen, .second-bathroom, .third-bathroom {
-      .inner {
-        margin-left: 0;
+      100% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
       }
     }
+    @keyframes pulse {
+      0% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      70% {
+        top: -10px;
+        left: -10px;
+        bottom: -10px;
+        right: -10px;
+      }
+
+      100% {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    //
+    //.panel-title > a {
+    //  padding: 15px 0;
+    //}
+    //
+    //.item .inner span {
+    //  font-size: 12px;
+    //  padding: 2px 7px 2px 14px;
+    //}
+    //
+    //.item .circle-small {
+    //  width: 15px;
+    //  height: 15px;
+    //}
+    //
+    //.item {
+    //  left: 2%;
+    //}
+    //
+    //.first-living {
+    //  top: 2%;
+    //}
+    //
+    //.second-living {
+    //  bottom: 36%;
+    //}
+    //
+    //.first-bedroom {
+    //  right: 18%;
+    //  top: 2%;
+    //}
+    //
+    //.second-bedroom {
+    //  top: 32%;
+    //}
+    //
+    //.third-bedroom {
+    //  bottom: 18%;
+    //}
+    //
+    //.four-bedroom {
+    //  bottom: 0%;
+    //}
+    //
+    //.first-hallway {
+    //  top: 2%;
+    //}
+    //
+    //.third-hallway {
+    //  bottom: 24%;
+    //}
+    //
+    //.first-kitchen {
+    //  top: 2%;
+    //}
+    //
+    //.second-kitchen {
+    //  bottom: 44%;
+    //}
+    //
+    //.first-bathroom {
+    //  top: -3%;
+    //}
+    //
+    //.second-bathroom {
+    //  top: 18%;
+    //}
+    //
+    //.third-bathroom {
+    //  bottom: 28%;
+    //}
+    //
+    //.four-bathroom {
+    //  bottom: 1%;
+    //}
+    //
+    //.third-living, .four-bedroom, .second-hallway, .third-kitchen, .four-kitchen, .second-bathroom, .third-bathroom {
+    //  .inner {
+    //    margin-left: 0;
+    //  }
+    //}
   }
 
   @media (max-width: 500px) {
@@ -642,16 +710,16 @@
     margin-bottom: 0;
   }
 
-  @media (max-width: 440px) {
-    .item .inner span {
-      font-size: 10px;
-    }
-  }
-
-  @media (max-width: 350px) {
-    .item .inner span {
-      font-size: 8px;
-    }
-  }
+  //@media (max-width: 440px) {
+  //  .item .inner span {
+  //    font-size: 10px;
+  //  }
+  //}
+  //
+  //@media (max-width: 350px) {
+  //  .item .inner span {
+  //    font-size: 8px;
+  //  }
+  //}
 
 }

@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: linear-gradient(90deg, #7E5895 0%, #FFFFFF 54.17%);
+    background: linear-gradient(90deg, #7E5895 0%, #FFFFFF 90%);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     padding: 10px 16px 10px 28px;
@@ -242,7 +242,9 @@
   }
 
   @media (max-width: 460px) {
-    top: 0;
+    top: 5px;
+    left: 5px;
+    right: 5px;
 
     .container {
       padding: 0 !important;

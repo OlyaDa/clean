@@ -28,10 +28,11 @@
   }
 
   .sub-caption {
-    font-weight: 300;
+    //font-weight: 300;
     font-size: 28px;
     line-height: 186.68%;
-    color: rgba(17, 5, 52, 0.8);
+    color: rgba(17, 5, 52, 1);
+    font-weight: 600;
     max-width: 840px;
     margin: 0 0 35px;
   }
@@ -284,8 +285,8 @@
 
 
   @media (max-width: 460px) {
-    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 11.02%, rgba(255, 255, 255, 0) 69.02%), url("../../public/images/banner-mob.png") top left no-repeat;
-    background-size: 100% 100%;
+    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 11.02%, rgba(255, 255, 255, 0) 69.02%), url("../../public/images/banner-mob.png") top left no-repeat !important;
+    background-size: 100% 100% !important;
 
     .caption {
       font-size: 28px;
@@ -293,10 +294,8 @@
     }
 
     .sub-caption {
-      font-weight: normal;
       font-size: 17px;
       line-height: 186.68%;
-      color: rgba(17, 5, 52, 0.6);
     }
 
     form {

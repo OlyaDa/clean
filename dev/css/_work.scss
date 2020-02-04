@@ -253,6 +253,7 @@
       text-align: center;
     }
 
+
     form {
       width: 422px;
       padding: 85px 50px 45px 50px;
@@ -278,6 +279,10 @@
   }
 
   @media (max-width: 660px) {
+    .slick-prev, .slick-next {
+      bottom: -7px;
+    }
+
     .image-pos {
       min-width: 368px;
       max-height: 274px;
@@ -313,16 +318,38 @@
 
     .before {
       left: 0;
+      right: 0;
+      width: 76px;
+      margin: auto;
+      &:before {
+        left: -24px;
+      }
     }
 
     .after {
       left: 0;
-     bottom: 285px;
+      bottom: 56%;
+      right: 0;
+      width: 101px;
+      margin: auto;
+      &:before {
+        left: -10px;
+      }
     }
-
   }
 
   @media (max-width: 500px) {
+
+    .after {
+      left: 0;
+      bottom: 48%;
+      right: 0;
+      width: 101px;
+      margin: auto;
+      &:before {
+        left: -10px;
+      }
+    }
 
     .inner {
       height: 590px;
@@ -335,6 +362,28 @@
   }
 
   @media (max-width: 420px) {
+
+    .before {
+      left: 0;
+      right: 0;
+      width: 76px;
+      margin: auto;
+      top: -40px;
+      &:before {
+        left: -24px;
+      }
+    }
+
+    .after {
+      left: 0;
+      bottom: 50%;
+      right: 0;
+      width: 101px;
+      margin: auto;
+      &:before {
+        left: -10px;
+      }
+    }
 
     .image-rel {
       max-width: 100%;
