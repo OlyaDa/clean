@@ -178,6 +178,10 @@
   background: url("../../public/images/bg-support.png") top left no-repeat !important;
   background-size: 100% 100% !important; }
 
+.general {
+  background: url("../../public/images/bg-general.png") top left no-repeat !important;
+  background-size: 100% 100% !important; }
+
 .banner {
   position: relative;
   min-height: calc(100vh - 87px);
@@ -1722,6 +1726,150 @@
   .clean-support .four-bathroom {
     right: 28%;
     bottom: 10%; }
+  .clean-support .first-living-general {
+    top: 4%;
+    left: 33%; }
+  .clean-support .second-living-general {
+    top: 50%;
+    right: 13%; }
+  .clean-support .four-living-general {
+    flex-direction: row-reverse;
+    bottom: 6%;
+    left: 47%; }
+    .clean-support .four-living-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .four-living-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-living-general {
+    flex-direction: row-reverse;
+    bottom: 28%;
+    left: 17%; }
+    .clean-support .third-living-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .third-living-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .first-bedroom-general {
+    flex-direction: row-reverse;
+    left: 26%;
+    top: 15%; }
+    .clean-support .first-bedroom-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .first-bedroom-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .second-bedroom-general {
+    top: 44%;
+    right: 20%; }
+  .clean-support .third-bedroom-general {
+    flex-direction: row-reverse;
+    left: 8%;
+    bottom: 26%; }
+    .clean-support .third-bedroom-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .third-bedroom-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .four-bedroom-general {
+    right: 10%;
+    bottom: 8%; }
+  .clean-support .first-hallway-general {
+    flex-direction: row-reverse;
+    left: 28%;
+    top: 23%; }
+    .clean-support .first-hallway-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .first-hallway-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .second-hallway-general {
+    flex-direction: row-reverse;
+    left: 15%;
+    top: 48%; }
+    .clean-support .second-hallway-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .second-hallway-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-hallway-general {
+    bottom: 13%;
+    right: 22%; }
+  .clean-support .four-hallway-general {
+    bottom: 3%;
+    left: 10%; }
+  .clean-support .first-kitchen-general {
+    left: 18%;
+    top: 11%; }
+  .clean-support .second-kitchen-general {
+    flex-direction: row-reverse;
+    top: 38%;
+    right: 15%; }
+    .clean-support .second-kitchen-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .second-kitchen-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-kitchen-general {
+    flex-direction: row-reverse;
+    left: 13%;
+    bottom: 28%; }
+    .clean-support .third-kitchen-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .third-kitchen-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .four-kitchen-general {
+    flex-direction: row-reverse;
+    bottom: 11%;
+    right: 8%; }
+    .clean-support .four-kitchen-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .four-kitchen-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .first-bathroom-general {
+    top: 14%;
+    right: 10%; }
+  .clean-support .second-bathroom-general {
+    flex-direction: row-reverse;
+    top: 34%;
+    left: 31%; }
+    .clean-support .second-bathroom-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .second-bathroom-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .third-bathroom-general {
+    flex-direction: row-reverse;
+    left: 14%;
+    bottom: 23%; }
+    .clean-support .third-bathroom-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .third-bathroom-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
+  .clean-support .four-bathroom-general {
+    flex-direction: row-reverse;
+    bottom: 11%;
+    right: 6%; }
+    .clean-support .four-bathroom-general .inner {
+      margin-right: 0;
+      margin-left: 27px; }
+      .clean-support .four-bathroom-general .inner .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px); }
   .clean-support .left {
     z-index: 2; }
   @media (max-width: 1200px) {
@@ -1729,28 +1877,36 @@
       margin-left: 0; }
     .clean-support .triangle {
       left: -1px; } }
+  @media (max-width: 1030px) {
+    .clean-support .second-living-general {
+      top: 38%; }
+    .clean-support .third-hallway-general {
+      bottom: 17%;
+      right: 25%; }
+    .clean-support .four-bathroom-general {
+      bottom: 6%; } }
   @media (max-width: 991px) {
     .clean-support {
       margin-top: -90px; } }
   @media (max-width: 860px) {
     .clean-support .holder {
       margin-right: -40px; }
-    .clean-support .second-bedroom {
+    .clean-support .second-bedroom-general {
       top: 40%;
       left: 5%; }
-    .clean-support .four-bedroom {
+    .clean-support .four-bedroom-general {
       bottom: 4%;
       left: 10%; }
-    .clean-support .third-hallway {
+    .clean-support .third-hallway-general {
       right: 19%;
       bottom: 15%; }
-    .clean-support .four-kitchen {
+    .clean-support .four-kitchen-general {
       bottom: 2%;
       left: 20%; }
-    .clean-support .third-bathroom {
+    .clean-support .third-bathroom-general {
       bottom: 28%;
       left: 19%; }
-    .clean-support .four-bathroom {
+    .clean-support .four-bathroom-general {
       right: 23%;
       bottom: 10%; }
     .clean-support ul li a {
@@ -1777,6 +1933,25 @@
   @media (max-width: 660px) {
     .clean-support {
       margin-top: 200px; } }
+  @media (max-width: 590px) {
+    .clean-support .first-bedroom-general {
+      left: 12%;
+      top: 8%; }
+    .clean-support .second-bedroom-general {
+      top: 32%;
+      right: 0; }
+    .clean-support .four-hallway-general {
+      bottom: 0%; }
+    .clean-support .second-kitchen-general {
+      top: 31%;
+      right: 15%; }
+    .clean-support .second-bathroom-general {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      top: 31%;
+      left: 6%; } }
   @media (max-width: 574px) {
     .clean-support ul li a {
       padding: 15px 0; } }
@@ -1787,55 +1962,37 @@
       right: 0;
       top: 0;
       bottom: 0;
-      margin: 5px 0; }
+      margin: auto;
+      width: 100%; }
     .clean-support .item .inner {
-      margin-right: 0;
-      margin-left: 0; }
+      margin: 4px;
+      margin-bottom: 5px;
+      width: 100%; }
+      .clean-support .item .inner span {
+        text-align: center; }
     .clean-support .item .circle-small {
-      border-radius: 50%;
-      width: 6px;
-      height: 6px;
-      background: -webkit-gradient(linear, left top, right top, from(#7E5895), to(#6B4184));
-      background: linear-gradient(90deg, #7E5895 0%, #6B4184 100%);
-      border: 1px solid #FFFFFF;
-      margin: 12px;
-      position: relative; }
-    @-webkit-keyframes pulse {
-      0% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0; }
-      70% {
-        top: -10px;
-        left: -10px;
-        bottom: -10px;
-        right: -10px; }
-      100% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0; } }
-    @keyframes pulse {
-      0% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0; }
-      70% {
-        top: -10px;
-        left: -10px;
-        bottom: -10px;
-        right: -10px; }
-      100% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0; } } }
+      display: none; }
+    .clean-support .item .inner .trian {
+      display: none; } }
   @media (max-width: 500px) {
     .clean-support {
       margin-top: 155px;
       margin-bottom: 0; } }
+  @media (max-width: 460px) {
+    .clean-support {
+      margin-top: 125px; } }
+  @media (max-width: 430px) {
+    .clean-support {
+      margin-top: 110px; } }
+  @media (max-width: 400px) {
+    .clean-support {
+      margin-top: 90px; } }
+  @media (max-width: 370px) {
+    .clean-support {
+      margin-top: 70px; } }
+  @media (max-width: 330px) {
+    .clean-support {
+      margin-top: 40px; } }
 
 .work {
   background: url("../../public/images/bg-why.png") top left no-repeat;

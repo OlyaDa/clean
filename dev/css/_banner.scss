@@ -3,6 +3,11 @@
   background-size: 100% 100% !important;
 }
 
+.general {
+    background: url("../../public/images/bg-general.png") top left no-repeat !important;
+    background-size: 100% 100% !important;
+}
+
 .banner {
   position: relative;
   min-height: calc(100vh - 87px);

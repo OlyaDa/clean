@@ -283,6 +283,8 @@
     //}
   }
 
+  ////для поддерживающей уборки
+
   .first-living {
     top: 23%;
     left: 35%;
@@ -455,6 +457,240 @@
     bottom: 10%;
   }
 
+  ////для генеральной уборки
+
+  .first-living-general {
+    top: 4%;
+    left: 33%;
+  }
+
+  .second-living-general {
+    top: 50%;
+    right: 13%;
+  }
+
+  .four-living-general {
+    flex-direction: row-reverse;
+    bottom: 6%;
+    left: 47%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .third-living-general {
+    flex-direction: row-reverse;
+    bottom: 28%;
+    left: 17%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .first-bedroom-general {
+    flex-direction: row-reverse;
+    left: 26%;
+    top: 15%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .second-bedroom-general {
+    top: 44%;
+    right: 20%;
+  }
+
+  .third-bedroom-general {
+    flex-direction: row-reverse;
+    left: 8%;
+    bottom: 26%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .four-bedroom-general {
+    right: 10%;
+    bottom: 8%;
+  }
+
+  .first-hallway-general {
+    flex-direction: row-reverse;
+    left: 28%;
+    top: 23%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .second-hallway-general {
+    flex-direction: row-reverse;
+    left: 15%;
+    top: 48%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .third-hallway-general {
+    bottom: 13%;
+    right: 22%;
+    }
+
+  .four-hallway-general {
+    bottom: 3%;
+    left: 10%;
+  }
+
+  .first-kitchen-general {
+    left: 18%;
+    top: 11%;
+  }
+
+  .second-kitchen-general {
+    flex-direction: row-reverse;
+    top: 38%;
+    right: 15%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .third-kitchen-general {
+    flex-direction: row-reverse;
+    left: 13%;
+    bottom: 28%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .four-kitchen-general {
+    flex-direction: row-reverse;
+    bottom: 11%;
+    right: 8%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .first-bathroom-general {
+    top: 14%;
+    right: 10%;
+  }
+
+  .second-bathroom-general {
+    flex-direction: row-reverse;
+    top: 34%;
+    left: 31%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .third-bathroom-general {
+    flex-direction: row-reverse;
+    left: 14%;
+    bottom: 23%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
+  .four-bathroom-general {
+    flex-direction: row-reverse;
+    bottom: 11%;
+    right: 6%;
+
+    .inner {
+      margin-right: 0;
+      margin-left: 27px;
+
+      .trian {
+        transform: rotate(180deg);
+        right: calc(100% - 1px);
+      }
+    }
+  }
+
   .left {
     z-index: 2;
   }
@@ -471,6 +707,22 @@
     }
   }
 
+  @media (max-width: 1030px) {
+    .second-living-general {
+      top: 38%;
+    }
+
+    .third-hallway-general {
+      bottom: 17%;
+      right: 25%;
+    }
+
+    .four-bathroom-general {
+      bottom: 6%;
+    }
+
+  }
+
   @media (max-width: 991px) {
     margin-top: -90px;
   }
@@ -479,32 +731,32 @@
     .holder {
       margin-right: -40px;
     }
-    .second-bedroom {
+    .second-bedroom-general {
       top: 40%;
       left: 5%;
     }
 
-    .four-bedroom {
+    .four-bedroom-general {
       bottom: 4%;
       left: 10%;
     }
 
-    .third-hallway {
+    .third-hallway-general {
       right: 19%;
       bottom: 15%;
     }
 
-    .four-kitchen {
+    .four-kitchen-general {
       bottom: 2%;
       left: 20%;
     }
 
-    .third-bathroom {
+    .third-bathroom-general {
       bottom: 28%;
       left: 19%;
     }
 
-    .four-bathroom {
+    .four-bathroom-general {
       right: 23%;
       bottom: 10%;
     }
@@ -544,6 +796,32 @@
     margin-top: 200px;
   }
 
+  @media (max-width: 590px) {
+    .first-bedroom-general {
+      left: 12%;
+      top: 8%;
+    }
+
+    .second-bedroom-general {
+      top: 32%;
+      right: 0;
+    }
+
+    .four-hallway-general {
+      bottom: 0%;
+    }
+
+    .second-kitchen-general {
+      top: 31%;
+      right: 15%;
+    }
+
+    .second-bathroom-general {
+      top: 31%;
+      left: 6%;
+    }
+  }
+
   @media (max-width: 574px) {
     ul li a {
       padding: 15px 0;
@@ -557,71 +835,72 @@
       right: 0;
       top: 0;
       bottom: 0;
-      margin: 5px 0;
-      //width: 81%;
-      //margin: auto;
+      margin: auto;
+      width: 100%;
+
     }
     .item .inner {
-      margin-right: 0;
-      margin-left: 0;
+      margin: 4px;
+      margin-bottom: 5px;
+      width: 100%;
+      span {
+        text-align: center;
+      }
     }
 
     .item .circle-small {
-      border-radius: 50%;
-      width: 6px;
-      height: 6px;
-      background: -webkit-gradient(linear, left top, right top, from(#7E5895), to(#6B4184));
-      background: linear-gradient(90deg, #7E5895 0%, #6B4184 100%);
-      border: 1px solid #FFFFFF;
-      margin: 12px;
-      position: relative;
+      display: none;
     }
 
-
-    @-webkit-keyframes pulse {
-      0% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-      }
-
-      70% {
-        top: -10px;
-        left: -10px;
-        bottom: -10px;
-        right: -10px;
-      }
-
-      100% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-      }
+    .item .inner .trian {
+      display: none;
     }
-    @keyframes pulse {
-      0% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-      }
 
-      70% {
-        top: -10px;
-        left: -10px;
-        bottom: -10px;
-        right: -10px;
-      }
-
-      100% {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-      }
-    }
+    //
+    //@-webkit-keyframes pulse {
+    //  0% {
+    //    top: 0;
+    //    left: 0;
+    //    bottom: 0;
+    //    right: 0;
+    //  }
+    //
+    //  70% {
+    //    top: -10px;
+    //    left: -10px;
+    //    bottom: -10px;
+    //    right: -10px;
+    //  }
+    //
+    //  100% {
+    //    top: 0;
+    //    left: 0;
+    //    bottom: 0;
+    //    right: 0;
+    //  }
+    //}
+    //@keyframes pulse {
+    //  0% {
+    //    top: 0;
+    //    left: 0;
+    //    bottom: 0;
+    //    right: 0;
+    //  }
+    //
+    //  70% {
+    //    top: -10px;
+    //    left: -10px;
+    //    bottom: -10px;
+    //    right: -10px;
+    //  }
+    //
+    //  100% {
+    //    top: 0;
+    //    left: 0;
+    //    bottom: 0;
+    //    right: 0;
+    //  }
+    //}
     //
     //.panel-title > a {
     //  padding: 15px 0;
@@ -708,6 +987,26 @@
   @media (max-width: 500px) {
     margin-top: 155px;
     margin-bottom: 0;
+  }
+
+  @media (max-width: 460px) {
+    margin-top: 125px;
+  }
+
+  @media (max-width: 430px) {
+    margin-top: 110px;
+  }
+
+  @media (max-width: 400px) {
+    margin-top: 90px;
+  }
+
+  @media (max-width: 370px) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: 330px) {
+    margin-top: 40px;
   }
 
   //@media (max-width: 440px) {
