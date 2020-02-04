@@ -34,71 +34,92 @@ $(document).ready(function () {
     });
 });
 
-//slider for "certificates"
+// //slider for "certificates"
+//
+// $('.certificates-slider').slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     infinite: true,
+//     arrows: true,
+//     dots: true,
+//     autoplay: false,
+//     centerMode: true,
+//     centerPadding: '0px',
+//     prevArrow: '<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+//     nextArrow: '<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 slidesToShow: 2,
+//                 arrows: true,
+//                 centerMode: false,
+//             }
+//         },
+//         {
+//             breakpoint: 769,
+//             settings: {
+//                 slidesToShow: 1,
+//                 arrows: false,
+//                 centerMode: false,
+//             }
+//         },
+//     ]
+// });
 
-$('.certificates-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: true,
-    dots: true,
-    autoplay: false,
-    centerMode: true,
-    centerPadding: '0px',
-    prevArrow: '<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow: '<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                arrows: true,
-                centerMode: false,
-            }
-        },
-        {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 1,
-                arrows: false,
-                centerMode: false,
-            }
-        },
-    ]
-});
-
-//slider for "reviews"
-
-$('.reviews-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: true,
-    prevArrow: '<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow: '<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    dots: true,
-    autoplay: false,
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                arrows: true,
-            }
-        },
-        {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 1,
-                arrows: false,
-            }
-        },
-    ]
-});
+// //slider for "reviews"
+//
+// $('.reviews-slider').slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     infinite: true,
+//     arrows: true,
+//     prevArrow: '<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+//     nextArrow: '<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+//     dots: true,
+//     autoplay: false,
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 slidesToShow: 2,
+//                 arrows: true,
+//             }
+//         },
+//         {
+//             breakpoint: 769,
+//             settings: {
+//                 slidesToShow: 1,
+//                 arrows: false,
+//             }
+//         },
+//     ]
+// });
 
 //slider for "why"
 
 $('.why-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button class="slick-arrow slick-prev"> <span class="icon-arrow-left"></span> </button>',
+    nextArrow: '<button class="slick-arrow slick-next"> <span class="icon-arrow-right"></span>  </button>',
+    responsive: [
+        {
+            breakpoint: 501,
+            settings: {
+                arrows: false,
+                dots: true,
+            }
+        },
+    ]
+});
+
+//slider for "work"
+
+$('.work-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
@@ -311,6 +332,16 @@ function toggleIcon(e) {
         .find(".triangle")
         .toggleClass('triangle-bottom triangle-top');
 }
+
 $('.panel-group').on('hidden.bs.collapse', toggleIcon);
 $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
+function toggleIcon2(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find(".trianglee")
+        .toggleClass('triangle-bot triangle-top-s');
+}
+
+$('.panel-group').on('hidden.bs.collapse', toggleIcon2);
+$('.panel-group').on('shown.bs.collapse', toggleIcon2);

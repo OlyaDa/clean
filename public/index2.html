@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Clean"/>
+    <meta property="og:description"
+          content=""/>
+    <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.img">
+    <meta property="og:url" content="https://teleport-plus.com/"/>
+    <meta property="og:site_name" content="teleport-plus"/>
+    <title>Clean</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!--.......................HEADER.......................-->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="top">
+                    <div class="logo">
+                        <a href="/">
+                            <img class="logo" src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <span class="toggle-menu">
+                        <span></span>
+                    </span>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class=" menu list-reset">
+                        <li><a href="#about" class="nav-link-new">О нас</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Виды уборки
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Генеральная</a>
+                                    <a class="dropdown-item" href="#">Поддерживающая</a>
+                                    <a class="dropdown-item" href="#">После стройки</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#reviews" class="nav-link-new">Отзывы</a></li>
+                        <li>
+                            <div class="button">
+                                <a href="#popup" class="btn popup-link">
+                                    Заказать звонок
+                                </a>
+                            </div>
+                        </li>
+                        <li class="social">
+                            <div class="social-icons">
+                                <a href="#">
+                                    <div class="circle-big">
+                                        <div class="circle-small">
+                                            <span class="icon-facebook"></span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="circle-big">
+                                        <div class="circle-small">
+                                            <span class="icon-jam-instagram"></span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="circle-big">
+                                        <div class="circle-small">
+                                            <span class="icon-youtube"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--.......................BANNER.......................-->
+
+    <div class="banner supporting">
+        <div class="container">
+            <div class="banner-inner">
+
+                <div class="captions">
+                    <h2 class="caption">
+                        Поддерживающая уборка
+                    </h2>
+                    <h3 class="sub-caption">
+                        Забудьте про уборку навсегда <br> Команда профессионалов выполнит всю грязную работу за вас
+                    </h3>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#">
+                        <div class="circle-big">
+                            <div class="circle-small">
+                                <span class="icon-facebook"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="circle-big">
+                            <div class="circle-small">
+                                <span class="icon-jam-instagram"></span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="circle-big">
+                            <div class="circle-small">
+                                <span class="icon-youtube"></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!--order-main-->
+                <form class="order-main">
+                    <p>
+                        <span class="icon-arrow-long"></span>
+                        Оставьте свой номер телефона и получите
+                        убранную квартиру в течении 1 дня
+                    </p>
+
+                    <div class="inputs">
+                        <input placeholder="Телефон" type="tel" name="phone" class="phoneidcl" required>
+                        <input name="order" type="hidden" value="Оставьте свой номер и получите убранную квартиру">
+
+                        <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                        <button class="disbutt" disabled>
+                            <span class="btn">Заказать звонок</span>
+                        </button>
+                    </div>
+
+                    <button class="disbutt mobile" disabled>
+                        <span class="btn">Заказать звонок</span>
+                    </button>
+                </form>
+                <!--order-main-->
+
+            </div>
+        </div>
+    </div>
+
+    <!--.......................MAIN.......................-->
+
+    <main class="content">
+
+        <!--.......................WHY.......................-->
+
+        <section class="why" id="about">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="caption">
+                            ПОЧЕМУ SOLIDCARE CLEANING
+                        </h2>
+                        <p class="first-text">
+                            В SOLIDCARE работают опытные профессионалы, которые, предоставляя максимально качественный
+                            сервис, затрагивающий каждый сантиметр помещения, умело применяют лучшие технологии по
+                            очистке и уходу за поверхностями, материалы , инструменты и оборудование ведущих мировых
+                            марок. Все то, чем можно порадовать Ваш дом и привести его в состояние «выставочного»
+                            образца.
+                        </p>
+                        <p>
+                            Но главный наш сюрприз – это доступность! Мы стараемся, чтобы каждый занятый, развивающийся
+                            житель нашего города, который разделяет наши ценности- мог позволить себе настоящее высшее
+                            качество услуг клининга SOLIDCARE.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 text-right">
+                        <div class="holder">
+                            <div class="slider">
+                                <div class="image">
+                                    <img class="image-grad" src="images/gradient.png" alt="gradient">
+
+                                    <img src="images/video1.png" alt="клининговая комманда">
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                <span class="circle">
+                                    <span class="icon-play"></span>
+                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="why-slider">
+                                    <div class="image-slider">
+                                        <img src="images/command.png" alt="клининговая комманда">
+                                    </div>
+
+                                    <div class="image-slider">
+                                        <img src="images/command.png" alt="клининговая комманда">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--.......................CLEAN SUPPORT.......................-->
+
+        <section class="clean-support">
+            <div class="container">
+                <h2 class="caption">
+                    КАК МЫ ДЕЛАЕМ ПОДДЕРЖИВАЮЩУЮ УБОРКУ
+                </h2>
+
+                <div class="row d-flex align-items-center desk">
+                    <div class="col-md-3 left">
+                        <div class="holder">
+
+                            <div class="image-grad">
+                                <img src="images/gradient2.png" alt="gradient">
+                            </div>
+
+                            <div class="fiolet-line"></div>
+
+                            <ul class="list-reset nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="livingroom-tab" data-toggle="tab" href="#livingroom"
+                                       role="tab" aria-controls="livingroom" aria-selected="true">ГОСТИННАЯ
+                                        <span class="triangle"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="bedroom-tab" data-toggle="tab"
+                                       href="#bedroom" role="tab" aria-controls="bedroom"
+                                       aria-selected="false">СПАЛЬНЯ
+                                        <span class="triangle"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="hallway-tab" data-toggle="tab"
+                                       href="#hallway" role="tab" aria-controls="hallway"
+                                       aria-selected="false">ПРИХОЖАЯ
+                                        <span class="triangle"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="kitchen-tab" data-toggle="tab"
+                                       href="#kitchen" role="tab" aria-controls="kitchen"
+                                       aria-selected="false">КУХНЯ
+                                        <span class="triangle"></span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="bathroom-tab" data-toggle="tab"
+                                       href="#bathroom" role="tab" aria-controls="bathroom"
+                                       aria-selected="false">САНУЗЕЛ
+                                        <span class="triangle"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <!--<div class="inner">-->
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="livingroom" role="tabpanel"
+                                 aria-labelledby="livingroom-tab">
+                                <div class="image">
+                                    <img src="images/living.png" alt="">
+
+                                    <div class="first-living item">
+                                        <div class="inner">
+                                            <span>Протираем все доступные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-living item">
+                                        <div class="inner">
+                                            <span>Заботливо расставим вещи</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-living item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы и плинтусы</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bedroom" role="tabpanel" aria-labelledby="bedroom-tab">
+                                <div class="image">
+                                    <img src="images/bedroom.png" alt="">
+
+                                    <div class="first-bedroom item">
+                                        <div class="inner">
+                                            <span>Моем до блеска зеркала и стеклянные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-bedroom item">
+                                        <div class="inner">
+                                            <span>сменим постельное белье и заправим постель  <br> как в пятизвездочной гостинице</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-bedroom item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы и плинтусы</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-bedroom item">
+                                        <div class="inner">
+                                            <span>Аккуратно соберем и сложим одежду</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hallway" role="tabpanel" aria-labelledby="hallway-tab">
+                                <div class="image">
+                                    <img src="images/hallway.png" alt="">
+
+                                    <div class="first-hallway item">
+                                        <div class="inner">
+                                            <span>Очистим до блеска зеркала и стеклянные <br> поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-hallway item">
+                                        <div class="inner">
+                                            <span>Протираем все доступные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-hallway item">
+                                        <div class="inner">
+                                            <span>Расставим обувь</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-hallway item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы </span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="kitchen" role="tabpanel" aria-labelledby="kitchen-tab">
+                                <div class="image">
+                                    <img src="images/kitchen.png" alt="">
+
+                                    <div class="first-kitchen item">
+                                        <div class="inner">
+                                            <span>Вымоем бытовую технику снаружи</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-kitchen item">
+                                        <div class="inner">
+                                            <span>Очистим от жира кухонную плиту</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-kitchen item">
+                                        <div class="inner">
+                                            <span>Вымоем столешницу и фасады кухни снаружи</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-kitchen item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы и плинтусы</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bathroom" role="tabpanel" aria-labelledby="bathroom-tab">
+                                <div class="image">
+                                    <img src="images/bathroom.png" alt="">
+
+                                    <div class="first-bathroom item">
+                                        <div class="inner">
+                                            <span>Протираем все доступные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-bathroom item">
+                                        <div class="inner">
+                                            <span>Очистим до блеска зеркала и стеклянные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-bathroom item">
+                                        <div class="inner">
+                                            <span>Соберем и вынесем мусор, заменим мусорный пакет</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-bathroom item">
+                                        <div class="inner">
+                                            <span>Вымоем и продезинфицируем всю сантехнику</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--</div>-->
+                    </div>
+                </div>
+
+                <!--/////////////////////for mobile////////////////////////-->
+
+                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                    ГОСТИННАЯ
+                                    <span class="trianglee triangle-bot"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingOne2">
+                            <div class="panel-body">
+                                <div class="image">
+                                    <img src="images/living.png" alt="">
+
+                                    <div class="first-living item">
+                                        <div class="inner">
+                                            <span>Протираем все доступные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-living item">
+                                        <div class="inner">
+                                            <span>Заботливо расставим вещи</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-living item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы и плинтусы</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseTwo2" aria-expanded="false"
+                                   aria-controls="collapseTwo2">
+                                    СПАЛЬНАЯ
+                                    <span class="trianglee triangle-bot"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingTwo2">
+                            <div class="panel-body">
+                                <div class="image">
+                                    <img src="images/bedroom.png" alt="">
+
+                                    <div class="first-bedroom item">
+                                        <div class="inner">
+                                            <span>Моем до блеска зеркала и стеклянные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-bedroom item">
+                                        <div class="inner">
+                                            <span>сменим постельное белье и заправим постель  <br> как в пятизвездочной гостинице</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-bedroom item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы и плинтусы</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-bedroom item">
+                                        <div class="inner">
+                                            <span>Аккуратно соберем и сложим одежду</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseThree2" aria-expanded="false"
+                                   aria-controls="collapseThree2">
+                                    ПРИХОЖАЯ
+                                    <span class="trianglee triangle-bot"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingThree2">
+                            <div class="panel-body">
+                                <div class="image">
+                                    <img src="images/hallway.png" alt="">
+
+                                    <div class="first-hallway item">
+                                        <div class="inner">
+                                            <span>Очистим до блеска зеркала и стеклянные <br> поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-hallway item">
+                                        <div class="inner">
+                                            <span>Протираем все доступные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-hallway item">
+                                        <div class="inner">
+                                            <span>Расставим обувь</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-hallway item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы </span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseFour2" aria-expanded="false"
+                                   aria-controls="collapseFour2">
+                                    КУХНЯ
+                                    <span class="trianglee triangle-bot"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour2" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFour2">
+                            <div class="panel-body">
+                                <div class="image">
+                                    <img src="images/kitchen.png" alt="">
+
+                                    <div class="first-kitchen item">
+                                        <div class="inner">
+                                            <span>Вымоем бытовую технику снаружи</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-kitchen item">
+                                        <div class="inner">
+                                            <span>Очистим от жира кухонную плиту</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-kitchen item">
+                                        <div class="inner">
+                                            <span>Вымоем столешницу и фасады кухни снаружи</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-kitchen item">
+                                        <div class="inner">
+                                            <span>Пропылесосим, а затем вымоем полы и плинтусы</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive2">
+                            <h4 class="panel-title">
+                                <a class="collapsed last" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseFive2" aria-expanded="false"
+                                   aria-controls="collapseFive2">
+                                    САНУЗЕЛ
+                                    <span class="trianglee triangle-bot"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive2" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFive2">
+                            <div class="panel-body last">
+                                <div class="image">
+                                    <img src="images/bathroom.png" alt="">
+
+                                    <div class="first-bathroom item">
+                                        <div class="inner">
+                                            <span>Протираем все доступные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="second-bathroom item">
+                                        <div class="inner">
+                                            <span>Очистим до блеска зеркала и стеклянные поверхности</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="third-bathroom item">
+                                        <div class="inner">
+                                            <span>Соберем и вынесем мусор, заменим мусорный пакет</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+
+                                    <div class="four-bathroom item">
+                                        <div class="inner">
+                                            <span>Вымоем и продезинфицируем всю сантехнику</span>
+                                            <div class="trian"></div>
+                                        </div>
+                                        <div class="circle-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- panel-group -->
+
+            </div>
+        </section>
+
+        <!--.......................ADVANTAGES.......................-->
+
+        <section class="advantages">
+            <div class="container">
+                <h2 class="caption">
+                    НАШИ СИЛЬНЫЕ СТОРОНЫ
+                </h2>
+                <div class="images d-flex justify-content-center">
+
+                    <div class="d-flex marg">
+
+                        <div class="image d-flex flex-column">
+                            <div class="image-small">
+                                <img src="images/strong1.png" alt="">
+                                <div class="overlay"></div>
+                                <p>Удобные для Вас <br> дата и время</p>
+                            </div>
+                            <div class="image-small mb-0">
+                                <img src="images/strong2.png" alt="">
+                                <div class="overlay"></div>
+                                <p>Инновационное <br> оборудование </p>
+                            </div>
+                        </div>
+
+                        <div class="image d-flex">
+                            <div class="image-big">
+                                <img src="images/strong3.png" alt="">
+                                <div class="overlay"></div>
+                                <p>Клиентский контроль <br> качества </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                        <div class="image d-flex flex-column">
+                            <div class="image d-flex">
+                                <div class="image-small">
+                                    <img src="images/strong4.png" alt="">
+                                    <div class="overlay"></div>
+                                    <p>Экологичная уборка <br> миллионами <br> пробиотиков</p>
+                                </div>
+                                <div class="image-small">
+                                    <img src="images/strong5.png" alt="">
+                                    <div class="overlay"></div>
+                                    <p>Конфиденциальность <br> и безопасность</p>
+                                </div>
+                            </div>
+
+                            <div class="image-big d-flex">
+                                <img src="images/strong6.png" alt="">
+                                <div class="overlay"></div>
+                                <p>Команда надежных <br> специалистов</p>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--.......................WORK.......................-->
+        <section class="work">
+            <div class="container">
+             <div class="row">
+                 <div class="col-lg-8">
+                     <div class="holder">
+
+                         <h2 class="caption">ПОСМОТРИТЕ КАК РАБОТАЮТ
+                             НАШИ СПЕЦИАЛИСТЫ</h2>
+                         <div class="slider">
+                             <p class="before">До уборки</p>
+                             <p class="after">После уборки</p>
+                             <div class="work-slider">
+                                 <div class="inner">
+                                     <div class="image-rel">
+                                         <img src="images/before.png" alt="">
+                                         <div class="image-pos">
+                                             <img src="images/after.png" alt="">
+                                         </div>
+                                     </div>
+                                 </div>
+
+                                 <div class="inner">
+                                     <div class="image-rel">
+                                         <img src="images/before.png" alt="">
+                                         <div class="image-pos">
+                                             <img src="images/after.png" alt="">
+                                         </div>
+                                     </div>
+                                 </div>
+
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4">
+                     <form class="order-main">
+                         <h4 class="form-title"> У вас остались вопросы?</h4>
+                         <p>Заполните форму и получите БЕСПЛАТНУЮ консультацию специалиста</p>
+
+                         <input placeholder="ИМЯ" type="text" name="name" required>
+                         <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+                         <input placeholder="ВОПРОС" type="text" name="question" required>
+                         <input name="order" type="hidden" value="У вас остались вопросы?">
+
+                         <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                         <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                         <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                         <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                         <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                         <button class="disbutt" disabled>
+                             <span class="btn">Заказать звонок </span>
+                         </button>
+                     </form>
+                 </div>
+             </div>
+            </div>
+        </section>
+        <!--.......................RECOMMEND.......................-->
+
+        <section class="recommend index-two" id="reviews">
+            <div class="container">
+                <h2 class="caption">
+                    НАС РЕКОМЕНДУЮТ
+                </h2>
+                <div class="recommend-slider">
+                    <div class="slider">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="info-block">
+
+                                    <div class="image-grad">
+                                        <img src="images/gradient2.png" alt="gradient">
+                                    </div>
+
+                                    <div class="icons">
+                                        <img src="images/account.png" alt="">
+                                        <img src="images/architecture.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                        <img src="images/wash.png" alt="">
+                                    </div>
+                                    <ul class="list-reset">
+                                        <li>
+                                            <p class="caption">Клиент</p>
+                                            <p class="info">Иванов Иван Иванович</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">объект</p>
+                                            <p class="info">Загородный дом</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">Площадь</p>
+                                            <p class="info">210 м<sup>2</sup></p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">тип уборки</p>
+                                            <p class="info">Генеральная уборка</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="video">
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                        <div class="image-play">
+                                            <img src="images/play.png" alt="">
+                                        </div>
+                                        <p class="watch">Смотреть видеоотзыв</p>
+                                    </a>
+                                    <div class="bg"></div>
+                                    <div class="image-video">
+                                        <img src="images/video2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="clean">
+                                    <div class="image-clean">
+                                        <p class="before">До уборки</p>
+                                        <img src="images/before.png" alt="">
+                                    </div>
+
+                                    <div class="image-clean">
+                                        <p class="after">После уборки</p>
+                                        <img src="images/after.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="info-block">
+
+                                    <div class="image-grad">
+                                        <img src="images/gradient2.png" alt="gradient">
+                                    </div>
+
+                                    <div class="icons">
+                                        <img src="images/account.png" alt="">
+                                        <img src="images/architecture.png" alt="">
+                                        <img src="images/focus.png" alt="">
+                                        <img src="images/wash.png" alt="">
+                                    </div>
+                                    <ul class="list-reset">
+                                        <li>
+                                            <p class="caption">Клиент</p>
+                                            <p class="info">Иванов Иван Иванович</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">объект</p>
+                                            <p class="info">Загородный дом</p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">Площадь</p>
+                                            <p class="info">210 м<sup>2</sup></p>
+                                        </li>
+                                        <li>
+                                            <p class="caption">тип уборки</p>
+                                            <p class="info">Генеральная уборка</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="video">
+                                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                        <div class="image-play">
+                                            <img src="images/play.png" alt="">
+                                        </div>
+                                        <p class="watch">Смотреть видеоотзыв</p>
+                                    </a>
+                                    <div class="bg"></div>
+                                    <div class="image-video">
+                                        <img src="images/video2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="clean">
+                                    <div class="image-clean">
+                                        <p class="before">До уборки</p>
+                                        <img src="images/before.png" alt="">
+                                    </div>
+
+                                    <div class="image-clean">
+                                        <p class="after">После уборки</p>
+                                        <img src="images/after.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--.......................APPEAL.......................-->
+
+        <section class="appeal">
+            <div class="container">
+                <h4 class="caption">
+                    обращение к клиентам
+                </h4>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="left-part">
+                            <div class="image-grad">
+                                <img src="images/gradient3.png" alt="gradient">
+                            </div>
+
+                            <p class="item-first">1. В своём стремлении повысить качество жизни, они забывают, что
+                                дальнейшее развитие различных форм деятельности не даёт нам иного выбора</p>
+
+                            <p>2. Но независимые государства лишь добавляют фракционных разногласий и ассоциативно
+                                распределены по отраслям.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="video">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                 <span class="circle">
+                                    <span class="icon-play"></span>
+                                </span>
+                            </a>
+                            <div class="image-video">
+                                <img src="images/video3.png" alt="">
+                            </div>
+
+                            <div class="info">
+                                <p class="name">Иванов Иван Иванович</p>
+                                <p class="status">Генеральный директор “SOLIDCARE”</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="right-part">
+                            <div class="image-grad">
+                                <img src="images/gradient4.png" alt="gradient">
+                            </div>
+
+                            <p class="item-third">3. В своём стремлении повысить качество жизни, они забывают, что
+                                дальнейшее развитие различных форм деятельности не даёт нам иного выбора</p>
+
+                            <p>4. Но независимые государства лишь добавляют фракционных разногласий и ассоциативно
+                                распределены по отраслям.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--.......................FOOTER.......................-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center d-flex">
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="caption">
+                        Контактные данные
+                    </h6>
+
+                    <div class="line"></div>
+
+                    <div class="info">
+                        <div class="phone">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-phone"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="tel:+380546576565" class="tel">+38 (054) 657 65 65</a>
+                        </div>
+
+                        <div class="address">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="adres">Киев, Банковая 45а</a>
+                        </div>
+
+                        <div class="email">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-email"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="mailto:solidcare_info@gmail.com" class="mail"></span>
+                                solidcare_info@gmail.com</a>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="social-icons">
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-facebook"></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-jam-instagram"></span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="circle-big">
+                                    <div class="circle-small">
+                                        <span class="icon-youtube"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="caption">
+                        Часто задаваемы вопросы
+                    </h6>
+
+                    <div class="line"></div>
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        За сколько дней нужно оставить заявку?
+                                        <span class="triangle triangle-bottom"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Время, затрачиваемое на профессиональный клининг, зависит от нескольких
+                                    факторов: степени и типа загрязнений (выведение трудных пятен требует усилий),
+                                    особенностей помещения (высокие или витражные окна мыть дольше) и т. д. В
+                                    среднем на генеральную уборку квартиры уходит 5–8 часов, в зависимости от ее
+                                    площади, количества комнат. Более сложные виды клининга потребуют больше
+                                    времени.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                       data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                       aria-controls="collapseTwo">
+                                        Нужно ли предоставлять вашим клинерам
+                                        инструменты, моющие средства?
+                                        <span class="triangle triangle-bottom"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Время, затрачиваемое на профессиональный клининг, зависит от нескольких
+                                    факторов: степени и типа загрязнений (выведение трудных пятен требует усилий),
+                                    особенностей помещения (высокие или витражные окна мыть дольше) и т. д. В
+                                    среднем на генеральную уборку квартиры уходит 5–8 часов, в зависимости от ее
+                                    площади, количества комнат. Более сложные виды клининга потребуют больше
+                                    времени.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                       data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                       aria-controls="collapseThree">
+                                        Нужно ли предоставлять вашим клинерам
+                                        инструменты, моющие средства?
+                                        <span class="triangle triangle-bottom"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Время, затрачиваемое на профессиональный клининг, зависит от нескольких
+                                    факторов: степени и типа загрязнений (выведение трудных пятен требует усилий),
+                                    особенностей помещения (высокие или витражные окна мыть дольше) и т. д. В
+                                    среднем на генеральную уборку квартиры уходит 5–8 часов, в зависимости от ее
+                                    площади, количества комнат. Более сложные виды клининга потребуют больше
+                                    времени.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- panel-group -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <form class="order-main">
+                        <h4 class="form-title"> У вас остались вопросы?</h4>
+                        <p>Заполните форму и получите БЕСПЛАТНУЮ консультацию специалиста</p>
+
+                        <input placeholder="ИМЯ" type="text" name="name" required>
+                        <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+                        <input placeholder="ВОПРОС" type="text" name="question" required>
+                        <input name="order" type="hidden" value="У вас остались вопросы?">
+
+                        <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                        <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                        <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+                        <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                        <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                        <button class="disbutt" disabled>
+                            <span class="btn">Заказать звонок </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="devgen p-1 text-center">
+        <a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by
+            GenerationLeadStudio</a>
+    </div>
+</div>
+
+<!--/////pop-up//////-->
+
+<div id="popup" class="mfp-hide popup">
+    <div class="container">
+
+        <form class="order-main">
+            <h4 class="form-title"><span id="customTextForm">У вас остались вопросы?</span></h4>
+            <p>Заполните форму и получите БЕСПЛАТНУЮ консультацию специалиста</p>
+
+            <input placeholder="ИМЯ" type="text" name="name" required>
+            <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+            <input placeholder="ВОПРОС" type="text" name="question" required>
+            <input name="order" type="hidden" value="У вас остались вопросы?">
+
+            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+            <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+            <button class="disbutt" disabled>
+                <span class="btn">Заказать звонок</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!--pop-up end-->
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<!-- Fontawesome -->
+<script defer src="js/all.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slick -->
+<script src="js/slick.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Input Mask -->
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<!-- Page Scroll -->
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+<!-- Main JS -->
+<script src="js/main.js"></script>
+</body>
+</html>

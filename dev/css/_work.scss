@@ -1,0 +1,355 @@
+.work {
+  background: url("../../public/images/bg-why.png") top left no-repeat;
+  background-size: auto 100%;
+  padding-top: 75px;
+  padding-bottom: 178px;
+
+  .slider {
+    position: relative;
+  }
+
+  .inner {
+    width: 100%;
+    height: 436px;
+  }
+
+  .caption {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 43px;
+    margin-bottom: 115px;
+    color: #5C3971;
+    max-width: 444px;
+  }
+
+  .image-rel {
+    max-width: 368px;
+    max-height: 274px;
+    position: relative;
+    box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 160px;
+    margin-left: 10px;
+  }
+
+  .image-pos {
+    min-width: 368px;
+    max-height: 274px;
+    position: absolute;
+    box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    top: 145px;
+    right: -280px;
+  }
+
+  .before, .after {
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    position: absolute;
+    margin: 0;
+
+    &:before {
+      position: absolute;
+      width: 134px;
+      height: 1px;
+      content: "";
+      bottom: -8px;
+      background: linear-gradient(90deg, #66F6FF 1.35%, #ffffff 100%);
+    }
+  }
+
+  .before {
+    left: 25px;
+    top: -50px;
+  }
+
+  .after {
+    left: 130px;
+    bottom: 0;
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev.slick-arrow {
+    left: 10px;
+  }
+
+  .slick-next {
+    left: 70px;
+  }
+
+  .slick-prev, .slick-next {
+    bottom: 20px;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #fff;
+    outline: none !important;
+    border: 1px solid #6B4184;
+    background: #6B4184;
+    z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #fff;
+  }
+  ///slick-prev slick-next end
+
+  //slider dots begin
+
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+  }
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+    border: 1px #6B4184 solid;
+    border-radius: 50%;
+  }
+
+  .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    border: 1px #6B4184 solid;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #6B4184;
+    border-radius: 50%;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+
+  //slider dots end
+
+  form {
+    margin-top: 90px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.35);
+    border-radius: 50px;
+    padding: 85px 50px 45px 50px;
+    text-align: center;
+    z-index: 2;
+
+    .form-title {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #5C3971;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #311C53;
+    }
+
+    input {
+      padding: 7px 5px;
+      width: 100%;
+      display: block;
+      border: none;
+      border-bottom: 1px solid #7E5895;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #5C3971;
+      background: transparent;
+      margin-bottom: 35px;
+    }
+
+    input[type="text"] {
+      margin-bottom: 24px;
+    }
+
+    input:focus {
+      outline: none !important;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #5C3971;
+    }
+    input::-ms-input-placeholder {
+      color: #5C3971;
+    }
+    input::-ms-input-placeholder {
+      color: #5C3971;
+    }
+    input::placeholder {
+      color: #5C3971;
+    }
+
+    button {
+      background: #6B4184;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      border-radius: 30px;
+      margin-top: 20px;
+      border: 1px solid #6B4184;
+      .btn {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 13px 43px;
+      }
+      &:hover {
+        transition: .2s;
+        background: #fff;
+        .btn {
+          color: #6B4184;
+        }
+      }
+    }
+  }
+
+  //media
+
+  @media (max-width: 1125px) {
+    form {
+      padding: 85px 20px 45px 20px;
+    }
+  }
+
+  @media (max-width: 1057px) {
+    .image-pos {
+      right: -240px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    .caption {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    form {
+      width: 422px;
+      padding: 85px 50px 45px 50px;
+      margin: 40px auto auto;
+    }
+
+    .slider {
+      margin: auto;
+      width: 640px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    form {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .caption {
+      margin-bottom: 59px;
+      line-height: 40px;
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .image-pos {
+      min-width: 368px;
+      max-height: 274px;
+      position: relative;
+      box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      top: 0;
+      right: 0;
+      margin-top: 60px;
+    }
+
+    .inner {
+      height: 710px;
+    }
+
+    .slider {
+      margin: auto;
+      width: 100%;
+    }
+
+    .image-rel {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .slick-prev.slick-arrow {
+      left: 42%;
+    }
+
+    .slick-next {
+      left: 53%;
+    }
+
+    .before {
+      left: 0;
+    }
+
+    .after {
+      left: 0;
+     bottom: 285px;
+    }
+
+  }
+
+  @media (max-width: 500px) {
+
+    .inner {
+      height: 590px;
+    }
+
+    form {
+      padding: 85px 20px 45px 20px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 420px) {
+
+    .image-rel {
+      max-width: 100%;
+      max-height: 100%;
+      margin-bottom: 20px;
+    }
+
+    .image-pos {
+      min-width: 100%;
+      max-height: 100%;
+    }
+
+    .inner {
+      height: 100%;
+    }
+  }
+
+}

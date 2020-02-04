@@ -1,0 +1,129 @@
+.advantages {
+  background: url("../../public/images/bg-services.png") top left no-repeat;
+  background-size: 100% 100%;
+  padding-top: 190px;
+
+  .caption {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 59px;
+    color: #FFFFFF;
+  }
+
+  .image-small {
+    margin-bottom: 26px;
+  }
+
+  .image-big, .image-small {
+    margin-right: 13px;
+    margin-left: 13px;
+    position: relative;
+
+    img {
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(360deg, #FFFFFF 5.33%, rgba(255, 255, 255, 0) 56.84%);
+    border-radius: 20px;
+  }
+
+  p {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 201.68%;
+    text-transform: uppercase;
+    color: #5C3971;
+    margin: 0;
+    position: absolute;
+    left: 23px;
+    bottom: 28px;
+    z-index: 2;
+  }
+
+  //media
+
+  @media (max-width: 1105px) {
+    p {
+      font-size: 15px;
+      left: 6px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    background: url("../../public/images/bg-ser-mob.png") top left no-repeat;
+    background-size: 100% 100%;
+    padding-top: 90px;
+    padding-bottom: 40px;
+
+    .caption {
+      margin-bottom: 40px;
+    }
+
+    .images {
+      flex-wrap: wrap;
+    }
+
+    .marg {
+      margin-bottom: 26px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .caption {
+      margin-bottom: 20px;
+      line-height: 40px;
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .marg {
+      margin-bottom: 18px;
+    }
+
+    .image-big, .image-small {
+      margin-right: 9px;
+      margin-left: 9px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    p {
+      line-height: 128.68%;
+      bottom: 15px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 474px) {
+    p {
+      font-size: 12px;
+      bottom: 12px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    p {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    p {
+      font-size: 8px;
+    }
+  }
+
+}
+
