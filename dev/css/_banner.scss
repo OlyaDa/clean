@@ -1,17 +1,4 @@
-.supporting {
-  background: url("../../public/images/bg-support.png") top left no-repeat !important;
-  background-size: 100% 100% !important;
-}
 
-.general {
-    background: url("../../public/images/bg-general.png") top left no-repeat !important;
-    background-size: 100% 100% !important;
-}
-
-.construction {
-  background: url("../../public/images/bg-construction.png") top left no-repeat !important;
-  background-size: 100% 100% !important;
-}
 
 .banner {
   position: relative;
@@ -295,7 +282,7 @@
 
 
   @media (max-width: 460px) {
-    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 11.02%, rgba(255, 255, 255, 0) 69.02%), url("../../public/images/banner-mob.png") top left no-repeat !important;
+    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.2) 19.02%, rgba(255, 255, 255, 0) 85.02%), url("../../public/images/banner-mob.png") top left no-repeat !important;
     background-size: 100% 100% !important;
 
     .caption {
@@ -328,4 +315,35 @@
     }
   }
 
+}
+
+
+.supporting {
+  background: url("../../public/images/bg-support.png") top left no-repeat !important;
+  background-size: 100% 100% !important;
+
+  @media (max-width: 460px) {
+    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 19.02%, rgba(255, 255, 255, 0) 85.02%), url("../../public/images/bg-support.png") top left no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+}
+
+.general {
+  background: url("../../public/images/bg-general.png") top left no-repeat !important;
+  background-size: 100% 100% !important;
+
+  @media (max-width: 460px) {
+    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 19.02%, rgba(255, 255, 255, 0) 85.02%), url("../../public/images/bg-general.png") top left no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+}
+
+.construction {
+  background: url("../../public/images/bg-construction.png") top left no-repeat !important;
+  background-size: 100% 100% !important;
+
+  @media (max-width: 460px) {
+    background: linear-gradient(137.14deg, rgba(255, 255, 255, 0.9) 19.02%, rgba(255, 255, 255, 0) 85.02%), url("../../public/images/bg-construction.png") top left no-repeat !important;
+    background-size: 100% 100% !important;
+  }
 }
